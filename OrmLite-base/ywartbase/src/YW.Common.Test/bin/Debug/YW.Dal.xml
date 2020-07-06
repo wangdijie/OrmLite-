@@ -1,0 +1,906 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YW.Dal</name>
+    </assembly>
+    <members>
+        <member name="T:YW.Dal.Base.CommandBase`1">
+            <summary>
+            命令基类.实现数据库操作
+            </summary>
+            <typeparam name="T">要操作的表实体</typeparam> 
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="db"></param>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Insert(`0)">
+            <summary> 插入一个实体
+            </summary>
+            <param name="entity">要插入的实体</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Insert(System.Collections.Generic.IEnumerable{`0})">
+            <summary> 插入一个实体数组
+            </summary>
+            <param name="entitys">要插入的实体数组</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Delete(System.Int64)">
+            <summary> 删除一个实体
+            </summary>
+            <param name="id">要删除的实体id</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Delete(System.Collections.Generic.IEnumerable{System.Int64})">
+            <summary> 删除一个实体数组
+            </summary>
+            <param name="ids">要删除的实体id数组</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Delete(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary> 根据条件删除
+            </summary>
+            <param name="predicate">删除的条件表达式</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Update(`0)">
+            <summary>
+            根据id更新一个实体
+            </summary>
+            <param name="entity">要更新的实体.</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Update(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            根据id更新一个实体数组
+            </summary>
+            <param name="entitys">要更新的实体数组.</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Update(System.Object,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            根据条件更新部分字段
+            </summary>
+            <param name="fields"></param>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.UpdateAdd(System.Linq.Expressions.Expression{System.Func{`0}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            增量更新方法
+            例子:UpdateAdd(()=>new T{Field=1(或者-1)},m=>条件表示)
+            </summary>
+            <param name="updateFields">要修改的字段和增量值,不修改的字段不赋值</param>
+            <param name="where">条件表达式</param>
+            <returns></returns>
+        </member>
+        <member name="M:YW.Dal.Base.QueryBase`1.SelectAll">
+            <summary>
+            获取所有记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:YW.Dal.Database.DbBase">
+            <summary>
+            数据库基类
+            包含多表查询方法
+            </summary>
+        </member>
+        <member name="T:YW.Dal.Database.DbFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:YW.Dal.Database.DAL.YW2016.AuthVerifyCodeDal.CheckCode(System.String,System.String)">
+            <summary>
+            校验验证码
+            </summary>
+            <param name="phone"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YW.Dal.Database.DAL.YW2016.AuthVerifyCodeDal.CheckCode(System.Int64,System.String)">
+            <summary>
+            校验验证码
+            </summary>
+            <param name="phone"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YW.Dal.Database.DAL.YW2016.AuthVerifyCodeDal.CreateCode(System.String,System.String@)">
+            <summary>
+            创建验证码
+            </summary>
+            <param name="phone"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YW.Dal.Database.DAL.YW2016.AuthVerifyCodeDal.CreateCode(System.Int64,System.String@)">
+            <summary>
+            创建验证码
+            </summary>
+            <param name="userId"></param>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.DB">
+            <summary>
+            数据库上下文
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AccumulatePointsGoods">
+            <summary>
+            积分商品表
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AccumulatePointsOrder">
+            <summary>
+            积分订单表。
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AccumulatePointsOrderUser">
+            <summary>
+            积分商品记录表
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AccumulatePointsRecord">
+            <summary>
+            用户积分变更记录表	
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ActivityCommonRecored">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ActivityDesignweek">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ActivityDesignweekPrize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ActivityPraiseRecored">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AgentCommissionInRecord">
+            <summary>
+            分销佣金存入记录
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AgentCommissionOutBankcard">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AgentCommissionOutRecord">
+            <summary>
+            分销佣金取出记录
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AgentOrgInfo">
+            <summary>
+            分销组织信息
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AgentPotentialCustomer">
+            <summary>
+            分销潜在客户
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AgentQrcodeRecord">
+            <summary>
+            二维码生成记录
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AgentReserveArtwork">
+            <summary>
+            分销预订作品
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AlipayNotify">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AopNotify">
+            <summary>
+            支付宝新接口通知记录表
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AppVersions">
+            <summary>
+            app版本信息
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AreasData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtFairCurationTheme">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtFairCurationThemeRelArtwork">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtFairCurator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtFairOrg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtFairOrgRelArtwork">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.Artist">
+            <summary>
+            艺术家
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtistAuctionRecord">
+            <summary>
+            艺术家拍卖记录
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtistBill">
+            <summary>
+            艺术家结算单
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtistComment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtistLike">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtistNotice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtistRecommendSequence">
+            <summary>
+            艺术家推荐序列
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.Artwork">
+            <summary>
+            艺术品
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkAnalysis">
+            <summary>
+            艺术品评析
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkComment">
+            <summary>
+            艺术品评论
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkCommentOperRecord">
+            <summary>
+            艺术品评论操作记录
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkCopy">
+            <summary>
+            艺术品
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkEdition">
+            <summary>
+            艺术品版次
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkFrame">
+            <summary>
+            画框
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkFramePadding">
+            <summary>
+            画框卡纸
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkFrameRelPadding">
+            <summary>
+            画框与卡纸关系
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkImage">
+            <summary>
+            艺术品图片
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkMaterial">
+            <summary>
+            艺术品原始素材
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkOrder">
+            <summary>
+            艺术品订单
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkOrderDetail">
+            <summary>
+            艺术品订单明细
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkPackage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkRecommendFromArtist">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkRelTag">
+            <summary>
+            艺术品与标签关系
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkSize">
+            <summary>
+            作品尺寸
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkTag">
+            <summary>
+            艺术品标签
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkTagGroup">
+            <summary>
+            艺术品标签组
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkTagRelGroup">
+            <summary>
+            艺术品标签与组关系
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkTags">
+            <summary>
+            艺术品的标签集合。
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ArtworkViewCountHistory">
+            <summary>
+            艺术品浏览量历史
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AuctionBid">
+            <summary>
+            拍卖_出价
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AuctionCare">
+            <summary>
+            拍卖_关注
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AuctionComment">
+            <summary>
+            拍卖_专场评论
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AuctionDeposit">
+            <summary>
+            拍卖_保证金
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AuctionDepositRefund">
+            <summary>
+            保证金退款单
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AuctionGoods">
+            <summary>
+            拍卖_拍品
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AuctionRound">
+            <summary>
+            拍卖_专场
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.AuthVerifyCode">
+            <summary>
+            身份验证码
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.Category">
+            <summary>
+            品类表
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.CategoryProp">
+            <summary>
+            品类属性表
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ClarifaiAppArtworkId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ClarifaiArtworkRel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ClarifaiColors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ClarifaiTags">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.CommonPraiseRecored">
+            <summary>
+            通用点赞表，所有点赞记录都可存在此表中，通过type区分
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ComplateWord">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.Course">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.CourseComment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.CourseCommentPraise">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.CourseDetail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.CourseDetailRecored">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.CourseOrder">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.CpsCookieInfo">
+            <summary>
+            CPS_Cookie信息
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.CpsOrder">
+            <summary>
+            CPS订单
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.CpsOrderDetail">
+            <summary>
+            CPS订单详情
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.CustomMade">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.DailyReport">
+            <summary>
+            每日报表记录
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.DiscountAction">
+            <summary>
+            折扣活动表
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.DiscountActionLog">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ExpressInfo">
+            <summary>
+            物流信息
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.FreightVoucher">
+            <summary>
+            运费券
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.FreightVoucherUser">
+            <summary>
+            用户运费券表
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.Game1Prize">
+            <summary>
+            游戏1抽奖_奖项
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.Game1RobRecord">
+            <summary>
+            游戏1抽奖_用户抽奖记录
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.Game1Round">
+            <summary>
+            游戏1抽奖_场次
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.Game1UserInfo">
+            <summary>
+            游戏1抽奖_场次参与用户信息
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.HuqiuArtworks">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.HuqiuVoteRecored">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.Message">
+            <summary>
+            站内消息
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ObjectSequence">
+            <summary>
+            对象序列
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ObjectSequenceDetail">
+            <summary>
+            对象序列明细
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.OpenapiAccessToken">
+            <summary>
+            API访问Token
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.OpenapiRefreshToken">
+            <summary>
+            API刷新Token
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.OpenApply">
+            <summary>
+            征集申请
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.OpenApplyArtwork">
+            <summary>
+            征集申请_艺术品
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.OrderMain">
+            <summary>
+            新订单主表
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.OrderRelPayorder">
+            <summary>
+            艺术品订单与支付单关系
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.PartnerOrg">
+            <summary>
+            合作机构
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.PayConfig">
+            <summary>
+            支付配置
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.PaymentMain">
+            <summary>
+            支付记录主表
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.Payorder">
+            <summary>
+            支付单
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.PhoneInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.PromoCode">
+            <summary>
+            艺网码
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.PromoCodeConfig">
+            <summary>
+            艺网码配置
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.PromoCodeGift">
+            <summary>
+            礼品码
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.PromoCodeRecord">
+            <summary>
+            艺网码使用记录
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.PropsTemplate">
+            <summary>
+            品类属性模板表
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.RebidApply">
+            <summary>
+            再出价申请
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.RecResult">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.RecTrackRecord">
+            <summary>
+            推荐作品点击跟踪记录表
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SceneBackground">
+            <summary>
+            场景背景
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SceneRelArtwork">
+            <summary>
+            场景与艺术品关系
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ShoppingCart">
+            <summary>
+            购物车
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SkuInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SkuProps">
+            <summary>
+            sku属性表
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SmsSendLog">
+            <summary>
+            信息发送记录
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SpuInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SpuProps">
+            <summary>
+            SPU属性配置
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.StorageConfig">
+            <summary>
+            存储配置
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SysConfig">
+            <summary>
+            系统配置项
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SysExceptionLog">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SysGroup">
+            <summary>
+            艺网部门
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SysMsg">
+            <summary>
+            系统消息
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SysOperRecord">
+            <summary>
+            后台操作记录
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SysOrderProcessLog">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SysResource">
+            <summary>
+            后台系统资源
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SysRole">
+            <summary>
+            后台角色
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SysUser">
+            <summary>
+            后台用户
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SysUserCopy">
+            <summary>
+            后台用户
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.SysUserRelRole">
+            <summary>
+            后台用户与角色关系
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.TigerHill">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.TopicInfo">
+            <summary>
+            专题信息
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.UnionPayNotify">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.UserAddress">
+            <summary>
+            用户收货地址
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.UserAvatarLib">
+            <summary>
+            用户预设头像库
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.UserCollect">
+            <summary>
+            用户藏品
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.UserInfo">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.UserLives">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.UserOauthInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.UserPost">
+            <summary>
+            用户提交数据统一保存到这里。
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.UserRelTag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.UserShareRecord">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.UserTag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.UserViewHistory">
+            <summary>
+            用户浏览记录
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.UserWishList">
+            <summary>
+            用户心愿单
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.UserWxbindRecored">
+            <summary>
+            原来手机号用户用该手机号绑定微信，把原来的手机号替换掉，记录表
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.VipCode">
+            <summary>
+            VIP邀请码
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.Voucher">
+            <summary>
+            代金券列表
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.VoucherUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.WechatPayNotify">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.WechatRedpackRecored">
+            <summary>
+            微信发送红包记录
+            </summary>
+        </member>
+    </members>
+</doc>

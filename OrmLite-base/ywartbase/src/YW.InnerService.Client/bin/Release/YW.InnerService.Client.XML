@@ -1,0 +1,3714 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YW.InnerService.Client</name>
+    </assembly>
+    <members>
+        <member name="T:YW.InnerService.Apis.ArtistsApi">
+            <summary>
+            Artists
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtistsApi.ViewCountAdd(System.Int64,System.Int64)">
+            <summary>
+            艺术家展示数量加一未登录用户id填0
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtistsApi.ViewCountAddAsync(System.Int64,System.Int64)">
+            <summary>
+            艺术家展示数量加一未登录用户id填0
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtistsApi.Comment(System.Int64,YW.InnerService.Models.ArtistCommentModel)">
+            <summary>
+            评论艺术家
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtistsApi.CommentAsync(System.Int64,YW.InnerService.Models.ArtistCommentModel)">
+            <summary>
+            评论艺术家
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtistsApi.SetMainInfo(System.Int64)">
+            <summary>
+            设置首页信息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtistsApi.SetMainInfoAsync(System.Int64)">
+            <summary>
+            设置首页信息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtistsApi.SetAllMainInfo">
+            <summary>
+            设置所有艺术家首页信息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtistsApi.SetAllMainInfoAsync">
+            <summary>
+            设置所有艺术家首页信息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtistsApi.ClearName1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtistsApi.ClearName1Async">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtistsApi.TestAgentOrder(System.Int64)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtistsApi.TestAgentOrderAsync(System.Int64)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Apis.ArtworksApi">
+            <summary>
+            Artworks
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.QueryArtworks(YW.InnerService.Models.ArtworkSearchModel)">
+            <summary>
+            艺术品搜索
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.QueryArtworksAsync(YW.InnerService.Models.ArtworkSearchModel)">
+            <summary>
+            艺术品搜索
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.Comment(System.Int64)">
+            <summary>
+            评论时调用.处理评论之后的逻辑
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.CommentAsync(System.Int64)">
+            <summary>
+            评论时调用.处理评论之后的逻辑
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.SyncStock4Artworks(System.Int64[])">
+            <summary>
+            统计并同步作品库存
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.SyncStock4ArtworksAsync(System.Int64[])">
+            <summary>
+            统计并同步作品库存
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.SyncStock4Artwork(System.Int64)">
+            <summary>
+            统计并同步作品库存
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.SyncStock4ArtworkAsync(System.Int64)">
+            <summary>
+            统计并同步作品库存
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.SyncStock4AllArtworks">
+            <summary>
+            同步所有艺术品库存
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.SyncStock4AllArtworksAsync">
+            <summary>
+            同步所有艺术品库存
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.Frames(System.Int64)">
+            <summary>
+            根据艺术品id获取对应的可用画框
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.FramesAsync(System.Int64)">
+            <summary>
+            根据艺术品id获取对应的可用画框
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.FrameAmount(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            获取画框费用,运费
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.FrameAmountAsync(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            获取画框费用,运费
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.ArtistRecommendPass(System.Int64)">
+            <summary>
+            艺术家推荐作品审核通过
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.ArtistRecommendPassAsync(System.Int64)">
+            <summary>
+            艺术家推荐作品审核通过
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.ArtistRecommendReject(System.Int64)">
+            <summary>
+            艺术家推荐作品审核拒绝
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.ArtistRecommendRejectAsync(System.Int64)">
+            <summary>
+            艺术家推荐作品审核拒绝
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.RecommendFromArtist(System.Int64,System.String)">
+            <summary>
+            艺术家推荐艺术品,在调用前需校验是否是自己的作品
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.RecommendFromArtistAsync(System.Int64,System.String)">
+            <summary>
+            艺术家推荐艺术品,在调用前需校验是否是自己的作品
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.SyncTag(System.Int64)">
+            <summary>
+            同步艺术品标签
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.SyncTagAsync(System.Int64)">
+            <summary>
+            同步艺术品标签
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.SetClarifaiInfo">
+            <summary>
+            从clarifai同步颜色信息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.SetClarifaiInfoAsync">
+            <summary>
+            从clarifai同步颜色信息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.SetClarifaiInfo(System.Int64)">
+            <summary>
+            设置clarifai信息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.SetClarifaiInfoAsync(System.Int64)">
+            <summary>
+            设置clarifai信息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.SyncTag4All">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.SyncTag4AllAsync">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.ViewCountAdd(System.Int64,System.Int64)">
+            <summary>
+            艺术品展示数量加一未登录用户id填0
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.ViewCountAddAsync(System.Int64,System.Int64)">
+            <summary>
+            艺术品展示数量加一未登录用户id填0
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.GetColors(System.String)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.ArtworksApi.GetColorsAsync(System.String)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Apis.AuctionsApi">
+            <summary>
+            Auctions
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.CreateDepositPayorder(System.Int64,YW.InnerService.Models.DepositPayorderCreateModel)">
+            <summary>
+            支付保证金支付单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.CreateDepositPayorderAsync(System.Int64,YW.InnerService.Models.DepositPayorderCreateModel)">
+            <summary>
+            支付保证金支付单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.DepositBack(System.Int64)">
+            <summary>
+            退还保证金
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.DepositBackAsync(System.Int64)">
+            <summary>
+            退还保证金
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.MarginPaymented(System.Int64)">
+            <summary>
+            保证经支付成功调用
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.MarginPaymentedAsync(System.Int64)">
+            <summary>
+            保证经支付成功调用
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.BidPrice(System.Int64,YW.InnerService.Models.BidPriceModel)">
+            <summary>
+            竞价
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.BidPriceAsync(System.Int64,YW.InnerService.Models.BidPriceModel)">
+            <summary>
+            竞价
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.GoodEnd(System.Int64)">
+            <summary>
+            拍品结拍
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.GoodEndAsync(System.Int64)">
+            <summary>
+            拍品结拍
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.Start(System.Int64)">
+            <summary>
+            专场开始
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.StartAsync(System.Int64)">
+            <summary>
+            专场开始
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.End(System.Int64)">
+            <summary>
+            专场结束
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.EndAsync(System.Int64)">
+            <summary>
+            专场结束
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.OrderPaid(System.Int64)">
+            <summary>
+            拍卖订单支付成功调用
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.OrderPaidAsync(System.Int64)">
+            <summary>
+            拍卖订单支付成功调用
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.FollowAuction(System.Int64,System.Int64)">
+            <summary>
+            关注专场
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.FollowAuctionAsync(System.Int64,System.Int64)">
+            <summary>
+            关注专场
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.CancelFollowAuction(System.Int64,System.Int64)">
+            <summary>
+            取消关注拍卖专场
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.CancelFollowAuctionAsync(System.Int64,System.Int64)">
+            <summary>
+            取消关注拍卖专场
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.FollowGood(System.Int64,System.Int64)">
+            <summary>
+            关注拍品
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.FollowGoodAsync(System.Int64,System.Int64)">
+            <summary>
+            关注拍品
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.CancelFollowGood(System.Int64,System.Int64)">
+            <summary>
+            取消关注拍品
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.CancelFollowGoodAsync(System.Int64,System.Int64)">
+            <summary>
+            取消关注拍品
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.Comment(System.Int64,YW.InnerService.Models.AuctionsCommentModel)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.AuctionsApi.CommentAsync(System.Int64,YW.InnerService.Models.AuctionsCommentModel)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Apis.EmailApi">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.EmailApi.Send(YW.InnerService.Models.EmailSendModel)">
+            <summary>
+            发送电子邮件
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.EmailApi.SendAsync(YW.InnerService.Models.EmailSendModel)">
+            <summary>
+            发送电子邮件
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Apis.MainOrdersApi">
+            <summary>
+            MainOrders
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.Create(YW.InnerService.Models.MainOrderCreateModel)">
+            <summary>
+            创建主订单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.CreateAsync(YW.InnerService.Models.MainOrderCreateModel)">
+            <summary>
+            创建主订单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.PackageOrderPreview(YW.InnerService.Models.MainOrderCreateModel)">
+            <summary>
+            套餐订单预览接口
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.PackageOrderPreviewAsync(YW.InnerService.Models.MainOrderCreateModel)">
+            <summary>
+            套餐订单预览接口
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.WxMiniPay(System.Int64,System.String)">
+            <summary>
+            todo:只复制了，还没改，以后用到主订单再改微信小程序支付只能自己支付自己的订单不可用todo
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.WxMiniPayAsync(System.Int64,System.String)">
+            <summary>
+            todo:只复制了，还没改，以后用到主订单再改微信小程序支付只能自己支付自己的订单不可用todo
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.WechatMpPay(System.Int64,System.String)">
+            <summary>
+            微信公众号支付主订单(PC/微信端)微信支付只能自己支付自己的订单todo:wx支付回调https的暂时不可用,
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.WechatMpPayAsync(System.Int64,System.String)">
+            <summary>
+            微信公众号支付主订单(PC/微信端)微信支付只能自己支付自己的订单todo:wx支付回调https的暂时不可用,
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.WechatAppPay(System.Int64)">
+            <summary>
+            微信开放平台支付(APP微信支付)todo:这个app端并没有使用
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.WechatAppPayAsync(System.Int64)">
+            <summary>
+            微信开放平台支付(APP微信支付)todo:这个app端并没有使用
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.AlipayAppPay(System.Int64)">
+            <summary>
+            支付宝APP支付
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.AlipayAppPayAsync(System.Int64)">
+            <summary>
+            支付宝APP支付
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.AlipayWebPay(System.Int64)">
+            <summary>
+            支付宝PC支付返回html
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.AlipayWebPayAsync(System.Int64)">
+            <summary>
+            支付宝PC支付返回html
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.ApplePay(System.Int64)">
+            <summary>
+            苹果APP支付返回tn码
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.ApplePayAsync(System.Int64)">
+            <summary>
+            苹果APP支付返回tn码
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.Payd(System.Int64)">
+            <summary>
+            主订单支付成功时调用
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainOrdersApi.PaydAsync(System.Int64)">
+            <summary>
+            主订单支付成功时调用
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Apis.MainPaymentApi">
+            <summary>
+            MainPayment
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainPaymentApi.Payd(System.Int64)">
+            <summary>
+            主支付单支付成功
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainPaymentApi.PaydAsync(System.Int64)">
+            <summary>
+            主支付单支付成功
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainPaymentApi.Refund(System.Int64)">
+            <summary>
+            主支付单退款
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MainPaymentApi.RefundAsync(System.Int64)">
+            <summary>
+            主支付单退款
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Apis.MessageApi">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.AuctionsRoundStart(System.Int64)">
+            <summary>
+            发送拍卖专场开始消息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.AuctionsRoundStartAsync(System.Int64)">
+            <summary>
+            发送拍卖专场开始消息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.AuctionsRoundEnd(System.Int64)">
+            <summary>
+            发送拍卖专场结束消息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.AuctionsRoundEndAsync(System.Int64)">
+            <summary>
+            发送拍卖专场结束消息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.AuctionsGoodsNewBid(System.Int64)">
+            <summary>
+            拍品有新出价
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.AuctionsGoodsNewBidAsync(System.Int64)">
+            <summary>
+            拍品有新出价
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.AuctionsGoodsEnd(System.Int64)">
+            <summary>
+            拍品拍卖结束
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.AuctionsGoodsEndAsync(System.Int64)">
+            <summary>
+            拍品拍卖结束
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.AuctionsDepositRefund(System.Int64)">
+            <summary>
+            拍卖专场保证经退款
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.AuctionsDepositRefundAsync(System.Int64)">
+            <summary>
+            拍卖专场保证经退款
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.AuctionsRoundDepositRefund(System.Int64)">
+            <summary>
+            拍卖专场保证经退款
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.AuctionsRoundDepositRefundAsync(System.Int64)">
+            <summary>
+            拍卖专场保证经退款
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.AuctionsDepositPaid(System.Int64)">
+            <summary>
+            保证金支付成功后发送消息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.AuctionsDepositPaidAsync(System.Int64)">
+            <summary>
+            保证金支付成功后发送消息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.Send(YW.InnerService.Models.UserMessageModel)">
+            <summary>
+            发送站内信
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.SendAsync(YW.InnerService.Models.UserMessageModel)">
+            <summary>
+            发送站内信
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.Read(System.Int64)">
+            <summary>
+            一条消息已读取
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.ReadAsync(System.Int64)">
+            <summary>
+            一条消息已读取
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.ReadUserMsg(System.Int64)">
+            <summary>
+            用户阅读所有发送给他的消息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.ReadUserMsgAsync(System.Int64)">
+            <summary>
+            用户阅读所有发送给他的消息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.ReadUser2UserMsg(System.Int64,System.Int64)">
+            <summary>
+            阅读一个人发给另外一个人所有消息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.ReadUser2UserMsgAsync(System.Int64,System.Int64)">
+            <summary>
+            阅读一个人发给另外一个人所有消息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.SendToAllApp(YW.InnerService.Models.AppNotifyModel)">
+            <summary>
+            给所有app发送消息推送
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.SendToAllAppAsync(YW.InnerService.Models.AppNotifyModel)">
+            <summary>
+            给所有app发送消息推送
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.SendToApp(System.Int64,YW.InnerService.Models.AppNotifyModel)">
+            <summary>
+            给制定用户的
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.SendToAppAsync(System.Int64,YW.InnerService.Models.AppNotifyModel)">
+            <summary>
+            给制定用户的
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.SendTemplateSMS(System.String,System.String,System.String[])">
+            <summary>
+            发送模版短信
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.SendTemplateSMSAsync(System.String,System.String,System.String[])">
+            <summary>
+            发送模版短信
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.SendCreateOrderMessage(System.Int64)">
+            <summary>
+            提交订单发送短信和微信
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.SendCreateOrderMessageAsync(System.Int64)">
+            <summary>
+            提交订单发送短信和微信
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.SendOrderPaySuccessMessage(System.Int64)">
+            <summary>
+            支付成功发送短信和微信
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.SendOrderPaySuccessMessageAsync(System.Int64)">
+            <summary>
+            支付成功发送短信和微信
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.SendFinancialAuditMessage(System.Int64)">
+            <summary>
+            转账支付发送短信和微信
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.MessageApi.SendFinancialAuditMessageAsync(System.Int64)">
+            <summary>
+            转账支付发送短信和微信
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Apis.OrdersApi">
+            <summary>
+            Orders
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.CreatePointsOrder(YW.InnerService.Models.CreateAccumulatePointsOrderParamModel)">
+            <summary>
+            积分商品订单创建接口如果是积分购买返回成功时.订单状态就是成功.如果是rmb购买.返回成功时需再调用主订单创建支付单接口,创建支付单并支付
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.CreatePointsOrderAsync(YW.InnerService.Models.CreateAccumulatePointsOrderParamModel)">
+            <summary>
+            积分商品订单创建接口如果是积分购买返回成功时.订单状态就是成功.如果是rmb购买.返回成功时需再调用主订单创建支付单接口,创建支付单并支付
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.CreatePayorder(System.Int64,YW.InnerService.Models.PayOrderCreateModel)">
+            <summary>
+            创建支付单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.CreatePayorderAsync(System.Int64,YW.InnerService.Models.PayOrderCreateModel)">
+            <summary>
+            创建支付单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.CreateOrder(YW.InnerService.Models.CreateOrderParamModel)">
+            <summary>
+            创建订单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.CreateOrderAsync(YW.InnerService.Models.CreateOrderParamModel)">
+            <summary>
+            创建订单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.CreateOrder2(YW.InnerService.Models.CreateOrderParamModel)">
+            <summary>
+            创建订单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.CreateOrder2Async(YW.InnerService.Models.CreateOrderParamModel)">
+            <summary>
+            创建订单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.PreviewCreate(YW.InnerService.Models.CreateOrderParamModel)">
+            <summary>
+            订单创建预览接口
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.PreviewCreateAsync(YW.InnerService.Models.CreateOrderParamModel)">
+            <summary>
+            订单创建预览接口
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.PreviewCreate2(YW.InnerService.Models.CreateOrderParamModel)">
+            <summary>
+            订单创建预览接口
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.PreviewCreate2Async(YW.InnerService.Models.CreateOrderParamModel)">
+            <summary>
+            订单创建预览接口
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.Paid(System.Int64,System.Int64)">
+            <summary>
+            订单支付成功逻辑
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.PaidAsync(System.Int64,System.Int64)">
+            <summary>
+            订单支付成功逻辑
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.CancelOrder(System.Int64)">
+            <summary>
+            取消订单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.CancelOrderAsync(System.Int64)">
+            <summary>
+            取消订单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.AutoCancel">
+            <summary>
+            自动取消所有支付超时订单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.OrdersApi.AutoCancelAsync">
+            <summary>
+            自动取消所有支付超时订单
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Apis.PayordersApi">
+            <summary>
+            Payorders
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.PayordersApi.WeChatMpPay(System.Int64,System.String)">
+            <summary>
+            微信公众支付支付单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.PayordersApi.WeChatMpPayAsync(System.Int64,System.String)">
+            <summary>
+            微信公众支付支付单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.PayordersApi.WxMiniMpPay(System.Int64,System.String)">
+            <summary>
+            微信小程序支付支付单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.PayordersApi.WxMiniMpPayAsync(System.Int64,System.String)">
+            <summary>
+            微信小程序支付支付单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.PayordersApi.WeChatMpPayMain(System.Int64,System.String)">
+            <summary>
+            微信公众支付主支付单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.PayordersApi.WeChatMpPayMainAsync(System.Int64,System.String)">
+            <summary>
+            微信公众支付主支付单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.PayordersApi.WxMiniMpPayMain(System.Int64,System.String)">
+            <summary>
+            微信小程序支付主支付单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.PayordersApi.WxMiniMpPayMainAsync(System.Int64,System.String)">
+            <summary>
+            微信小程序支付主支付单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.PayordersApi.Payd">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.PayordersApi.PaydAsync">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Apis.SpuApi">
+            <summary>
+            Spu
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.SpuApi.Post(YW.InnerService.Models.SpuCreateModel)">
+            <summary>
+            spu创建接口
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.SpuApi.PostAsync(YW.InnerService.Models.SpuCreateModel)">
+            <summary>
+            spu创建接口
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Apis.UsersApi">
+            <summary>
+            Users
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.RecommendArtworks(System.Int64,System.Int32)">
+            <summary>
+            根据用户ID推荐艺术品
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.RecommendArtworksAsync(System.Int64,System.Int32)">
+            <summary>
+            根据用户ID推荐艺术品
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SetPassword(System.Int64,System.String)">
+            <summary>
+            设置密码
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SetPasswordAsync(System.Int64,System.String)">
+            <summary>
+            设置密码
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.CheckFreeArtworkForVip(System.Int64)">
+            <summary>
+            检查用户是否满足首次充一年会员送版画
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.CheckFreeArtworkForVipAsync(System.Int64)">
+            <summary>
+            检查用户是否满足首次充一年会员送版画
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.PresentFreeArtworkForVip(YW.InnerService.Models.CreateOrderParamModel)">
+            <summary>
+            赠送版画
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.PresentFreeArtworkForVipAsync(YW.InnerService.Models.CreateOrderParamModel)">
+            <summary>
+            赠送版画
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SetPasswordByCode(YW.InnerService.Models.ResetPasswordModel)">
+            <summary>
+            通过短信验证码重置密码
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SetPasswordByCodeAsync(YW.InnerService.Models.ResetPasswordModel)">
+            <summary>
+            通过短信验证码重置密码
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SetPhone(System.Int64,YW.InnerService.Models.SetPhoneNumberParamsModel)">
+            <summary>
+            设置手机号码
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SetPhoneAsync(System.Int64,YW.InnerService.Models.SetPhoneNumberParamsModel)">
+            <summary>
+            设置手机号码
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SetInfo(System.Int64,YW.InnerService.Models.UserInfoParamModel)">
+            <summary>
+            设置用户基本信息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SetInfoAsync(System.Int64,YW.InnerService.Models.UserInfoParamModel)">
+            <summary>
+            设置用户基本信息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.UploadPhoto(System.Int64,System.Byte[])">
+            <summary>
+            上传用户头像,正文为图片字节流.
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.UploadPhotoAsync(System.Int64,System.Byte[])">
+            <summary>
+            上传用户头像,正文为图片字节流.
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SetPhoto(System.Int64,System.String)">
+            <summary>
+            使用默认头像
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SetPhotoAsync(System.Int64,System.String)">
+            <summary>
+            使用默认头像
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.PhoneIsReg(System.String)">
+            <summary>
+            手机号码是已注册
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.PhoneIsRegAsync(System.String)">
+            <summary>
+            手机号码是已注册
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.Delete(System.String)">
+            <summary>
+            删除用户
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.DeleteAsync(System.String)">
+            <summary>
+            删除用户
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SetNotVip(System.Int64)">
+            <summary>
+            设置非vip
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SetNotVipAsync(System.Int64)">
+            <summary>
+            设置非vip
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.WeiXinIsSubscribe(System.Int64)">
+            <summary>
+            是否是微信关注用户
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.WeiXinIsSubscribeAsync(System.Int64)">
+            <summary>
+            是否是微信关注用户
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.WeixinUserInfo(System.Int64)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.WeixinUserInfoAsync(System.Int64)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.LikeArtwork(System.Int64,System.Int64)">
+            <summary>
+            添加心愿单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.LikeArtworkAsync(System.Int64,System.Int64)">
+            <summary>
+            添加心愿单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.UnLikeArtwork(System.Int64,System.Int64)">
+            <summary>
+            删除心愿单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.UnLikeArtworkAsync(System.Int64,System.Int64)">
+            <summary>
+            删除心愿单
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.LikeArtist(System.Int64,System.Int64)">
+            <summary>
+            喜欢艺术家
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.LikeArtistAsync(System.Int64,System.Int64)">
+            <summary>
+            喜欢艺术家
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.UnLikeArtist(System.Int64,System.Int64)">
+            <summary>
+            不再喜欢艺术家
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.UnLikeArtistAsync(System.Int64,System.Int64)">
+            <summary>
+            不再喜欢艺术家
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SignIn(System.Int64)">
+            <summary>
+            用户签到
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SignInAsync(System.Int64)">
+            <summary>
+            用户签到
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.GivePoint(System.Int64,System.Int32)">
+            <summary>
+            增加用户积分2.签到积分  3.消费积分(不可用) 4.点赞积分 5.评论积分 6.分享评论赠送积分 7.浏览作品送积分
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.GivePointAsync(System.Int64,System.Int32)">
+            <summary>
+            增加用户积分2.签到积分  3.消费积分(不可用) 4.点赞积分 5.评论积分 6.分享评论赠送积分 7.浏览作品送积分
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SendVoucher(System.Int64,System.Int64)">
+            <summary>
+            给制定用户发送制定优惠券
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SendVoucherAsync(System.Int64,System.Int64)">
+            <summary>
+            给制定用户发送制定优惠券
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SendBatchVoucher(YW.InnerService.Models.UserSendVoucher)">
+            <summary>
+            给批量用户发送指定优惠券
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SendBatchVoucherAsync(YW.InnerService.Models.UserSendVoucher)">
+            <summary>
+            给批量用户发送指定优惠券
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SendFreightVoucher(System.Int64,System.Int64)">
+            <summary>
+            给指定的用户发送指定的运费券
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SendFreightVoucherAsync(System.Int64,System.Int64)">
+            <summary>
+            给指定的用户发送指定的运费券
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SendVipVouchers(System.Int64)">
+            <summary>
+            给VIP用户赠送3张优惠券
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.SendVipVouchersAsync(System.Int64)">
+            <summary>
+            给VIP用户赠送3张优惠券
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.GetAgentUserAvailableAmount(System.Int64,System.Boolean,System.Int64)">
+            <summary>
+            获取获取分销人/分销组织的可提现金额，若是分销组织，则isOrg为true
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.GetAgentUserAvailableAmountAsync(System.Int64,System.Boolean,System.Int64)">
+            <summary>
+            获取获取分销人/分销组织的可提现金额，若是分销组织，则isOrg为true
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.Post(YW.InnerService.Models.UserRegModel)">
+            <summary>
+            用户注册接口
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.PostAsync(YW.InnerService.Models.UserRegModel)">
+            <summary>
+            用户注册接口
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.Get(System.Int64)">
+            <summary>
+            获取用户信息
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.UsersApi.GetAsync(System.Int64)">
+            <summary>
+            获取用户信息
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Apis.WeChatApi">
+            <summary>
+            WeChat
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.WeChatApi.AccessToken">
+            <summary>
+            获取微信公众号AccessToken
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.WeChatApi.AccessTokenAsync">
+            <summary>
+            获取微信公众号AccessToken
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.WeChatApi.RefreshAccessToken">
+            <summary>
+            获取新的微信公众号AccessToken
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.WeChatApi.RefreshAccessTokenAsync">
+            <summary>
+            获取新的微信公众号AccessToken
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.WeChatApi.JsApiTicket">
+            <summary>
+            获取微信公众号JsApiTicket
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.WeChatApi.JsApiTicketAsync">
+            <summary>
+            获取微信公众号JsApiTicket
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.WeChatApi.RefreshJsApiTicket">
+            <summary>
+            获取微信公众号JsApiTicket
+            </summary>
+        </member>
+        <member name="M:YW.InnerService.Apis.WeChatApi.RefreshJsApiTicketAsync">
+            <summary>
+            获取微信公众号JsApiTicket
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.ArtistCommentModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtistCommentModel.Content">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtistCommentModel.UserId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.ArtworkSearchModel">
+            <summary>
+            搜索参数
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.KeyWord">
+            <summary>
+            关键词
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.MinPrice">
+            <summary>
+            最小价格
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.MaxPrice">
+            <summary>
+            最大价格
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.MinSize">
+            <summary>
+            最小尺寸
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.MaxSize">
+            <summary>
+            最大尺寸
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.ArtistName">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.Color">
+            <summary>
+            颜色
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.Shape">
+            <summary>
+            形状
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.Space">
+            <summary>
+            展示空间
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.Category">
+            <summary>
+            分类
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.Style">
+            <summary>
+            风格
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.Theme">
+            <summary>
+            主题
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.IsSimpleShow">
+            <summary>
+            是否简单呈现
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.IsOnlyNoSold">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.SortKey">
+            <summary>
+            排序规则
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.Type">
+            <summary>
+            艺术品类型
+            可选枚举值:All,Original,Collection,Print
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.AgentCode">
+            <summary>
+            分销码
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.IsCollect">
+            <summary>
+            是否藏艺术
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.IsZaoyi">
+            <summary>
+            是否造诣
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.SearchAll">
+            <summary>
+            搜索全部作品
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.IsArtFair">
+            <summary>
+            是否是艺博会商品
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.Page">
+            <summary>
+            当前页码
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkSearchModel.PageSize">
+            <summary>
+            每页的条数
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.ArtworkDataModel">
+            <summary>
+            艺术品实体model
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.Id">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ArtworkName">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.Ename">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ArtistId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.Category">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.CreateDate1">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.CreateDate2">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.PriceContract">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.PriceSale">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.PriceDiscount">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.AcademicCategory1">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.AcademicCategory2">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.Recommend">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.RecommendSysUserId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.Introduction">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ExpressType">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ExpressAddress">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ExpressContacts">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ExpressPhone">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.Memo">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.StockTotal">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.StockSold">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.StockLock">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.SkuId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.StockFree">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.IsSold">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.IsLock">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.BelongsArea">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ArtworkAttr">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ArtworkMaterial">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ArtworkShape">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ImgMaterial">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgFilename">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgSizeThickness">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgSizeHeight">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgSizeWidth">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgWidth">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgHeight">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgC1">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgC2">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgC3">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgC4">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgC5">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgC1v">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgC2v">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgC3v">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgC4v">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.MainimgC5v">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ShowSpace1">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ShowSpace2">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ShowSpace3">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ShowSpace4">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ArtworkStyle">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.ArtworkSubject">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.Edition1">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.Edition2">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.CanFramed">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.IsSimpleShow">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.IsCollect">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.IsNewRecommend">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.IsZaoyi">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.IsAudit">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.AuditStatus">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.RejectReason">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.IsAdopt">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.IsPutaway">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.PutawayTime">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.IsAgentReserve">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.AgentReserveUserId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.IsAuctionGoods">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.PriceAuctionHammer">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.PriceAuctionSold">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.PartnerOrgName">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.IsTest">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.SortKey">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.CreateSysUserId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.CountView">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.IsDel">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.CreateTime">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.UpdateTime">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.CountLike">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.SizeMin">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.SizeMax">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.AgentOrgId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.LockTimeout">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.CustomerSortKey">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.DecorationImgs">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.Color">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.PriceSaleOld">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkDataModel.IsArtFair">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.ArtworkFrameModel">
+            <summary>
+            画框实体
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkFrameModel.ArtworkFrame">
+            <summary>
+            画框
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkFrameModel.Paddings">
+            <summary>
+            卡纸描述
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.FrameModel">
+            <summary>
+            框架描述
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.Id">
+            <summary>
+            ID
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.Name">
+            <summary>
+            名称
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.UnitPrice">
+            <summary>
+            材料单价
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.ThumImg">
+            <summary>
+            缩略图
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.SampleImg">
+            <summary>
+            样板图片
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.SampleResolution">
+            <summary>
+            样板分辨率 像素/厘米
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A1Top">
+            <summary>
+            左上角_top
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A1Left">
+            <summary>
+            左上角_left
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A1Width">
+            <summary>
+            左上角_width
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A1Height">
+            <summary>
+            左上角_height
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A1CoverX">
+            <summary>
+            左上角覆盖_x
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A1CoverY">
+            <summary>
+            左上角覆盖_y
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A2Top">
+            <summary>
+            右上角_top
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A2Left">
+            <summary>
+            右上角_left
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A2Width">
+            <summary>
+            右上角_width
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A2Height">
+            <summary>
+            右上角_height
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A2CoverX">
+            <summary>
+            右上角覆盖_x
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A2CoverY">
+            <summary>
+            右上角覆盖_y
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A3Top">
+            <summary>
+            右下角_top
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A3Left">
+            <summary>
+            右下角_left
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A3Width">
+            <summary>
+            右下角_width
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A3Height">
+            <summary>
+            右下角_height
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A3CoverX">
+            <summary>
+            右下角覆盖_x
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A3CoverY">
+            <summary>
+            右下角覆盖_y
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A4Top">
+            <summary>
+            左下角_top
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A4Left">
+            <summary>
+            左下角_left
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A4Width">
+            <summary>
+            左下角_width
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A4Height">
+            <summary>
+            左下角_height
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A4CoverX">
+            <summary>
+            左下角覆盖_x
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.A4CoverY">
+            <summary>
+            左下角覆盖_y
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B1Top">
+            <summary>
+            上边_top
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B1Left">
+            <summary>
+            上边_left
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B1Width">
+            <summary>
+            上边_width
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B1Height">
+            <summary>
+            上边_height
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B1RenderType">
+            <summary>
+            左边渲染方式 0 拉伸 1 循环
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B2Top">
+            <summary>
+            右边_top
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B2Left">
+            <summary>
+            右边_left
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B2Width">
+            <summary>
+            右边_width
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B2Height">
+            <summary>
+            右边_height
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B2RenderType">
+            <summary>
+            左边渲染方式 0 拉伸 1 循环
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B3Top">
+            <summary>
+            下边_top
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B3Left">
+            <summary>
+            下边_left
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B3Width">
+            <summary>
+            下边_width
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B3Height">
+            <summary>
+            下边_height
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B3RenderType">
+            <summary>
+            左边渲染方式 0 拉伸 1 循环
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B4Top">
+            <summary>
+            左边_top
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B4Left">
+            <summary>
+            左边_left
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B4Width">
+            <summary>
+            左边_width
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B4Height">
+            <summary>
+            左边_height
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.FrameModel.B4RenderType">
+            <summary>
+            左边渲染方式 0 拉伸 1 循环
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.ArtworkFramePriceModel">
+            <summary>
+            艺术品装裱相关费用
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkFramePriceModel.FrameAmount">
+            <summary>
+            画框费用
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkFramePriceModel.ExpressAmount">
+            <summary>
+            物流费用
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.DepositPayorderCreateModel">
+            <summary>
+            保证金支付单创建参数实体
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.DepositPayorderCreateModel.AppOsType">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.DepositPayorderCreateModel.AppOsVer">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.DepositPayorderCreateModel.AppVer">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.DepositPayorderCreateModel.ClientType">
+            <summary>
+            客户端类型
+            可选枚举值:Unknown,PC,WAP,APP,WxMini,WxWAP
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.DepositPayorderCreateModel.Ip">
+            <summary>
+            用户的ip地址
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.DepositPayorderCreateModel.UserId">
+            <summary>
+            要支付保证金的用户
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.BidPriceModel">
+            <summary>
+            报价参数实体
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.BidPriceModel.Price">
+            <summary>
+            最新报价
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.BidPriceModel.UserId">
+            <summary>
+            举牌用户
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.AuctionsCommentModel">
+            <summary>
+            专场评论
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.AuctionsCommentModel.UserId">
+            <summary>
+            评论用户ID
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.AuctionsCommentModel.CommentId">
+            <summary>
+            要评论的评论
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.AuctionsCommentModel.Content">
+            <summary>
+            评论的内容
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.EmailSendModel">
+            <summary>
+            邮件发送参数实体
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.EmailSendModel.ToEmails">
+            <summary>
+            收件箱地址
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.EmailSendModel.Title">
+            <summary>
+            邮件标题
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.EmailSendModel.Body">
+            <summary>
+            邮件正文
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.MainOrderCreateModel">
+            <summary>
+            主订单创建参数实体
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.MainOrderCreateModel.UserId">
+            <summary>
+            创建订单的用户
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.MainOrderCreateModel.InvoiceTitle">
+            <summary>
+            发票抬头
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.MainOrderCreateModel.BusinessTax">
+            <summary>
+            企业税号
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.MainOrderCreateModel.AppDesc">
+            <summary>
+            用户客户端描述
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.MainOrderCreateModel.Type">
+            <summary>
+            
+            可选枚举值:ArtworkOrder,PointOrder,RmbBuyVipOrder,AuctionDepositOrder,ArtworkPackageOrder
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.MainOrderCreateModel.AuctionDepositParams">
+            <summary>
+            保证金订单参数
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.MainOrderCreateModel.ArtworkOrderParams">
+            <summary>
+            艺术品订单的参数
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.MainOrderCreateModel.PackageOrderParams">
+            <summary>
+            套餐订单创建参数
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.ClientInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ClientInfo.ClientType">
+            <summary>
+            客户端类型
+            可选枚举值:Unknown,PC,WAP,APP,WxMini,WxWAP
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ClientInfo.AppOsType">
+            <summary>
+            app系统类型,仅在app调用时发送
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ClientInfo.AppOsVer">
+            <summary>
+            app系统版本,仅在app调用时发送
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ClientInfo.AppVer">
+            <summary>
+            app版本,仅在app调用时发送
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.AuctionDepositOrderCreateModel">
+            <summary>
+            拍卖保证金订单创建参数
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.AuctionDepositOrderCreateModel.UserId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.AuctionDepositOrderCreateModel.RoundId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.ArtworkOrderCreateModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.ArtworkPackageOrderCreateModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkPackageOrderCreateModel.PackageId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkPackageOrderCreateModel.Goods">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkPackageOrderCreateModel.AddressId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkPackageOrderCreateModel.Remark">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.ArtworkGoodsItem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkGoodsItem.ArtworkId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkGoodsItem.EditionId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkGoodsItem.FrameId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkGoodsItem.PaddingId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.ArtworkPackageOrderPreviewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkPackageOrderPreviewModel.Freight">
+            <summary>
+            总运费
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkPackageOrderPreviewModel.FrameAmount">
+            <summary>
+            装裱费用
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkPackageOrderPreviewModel.TotalAmount">
+            <summary>
+            作品总价格
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkPackageOrderPreviewModel.PackageDiscountAmount">
+            <summary>
+            套餐优惠
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkPackageOrderPreviewModel.Goods">
+            <summary>
+            要购买的商品信息
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkPackageOrderPreviewModel.PackageName">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkPackageOrderPreviewModel.PackageImgUrl">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ArtworkPackageOrderPreviewModel.Sum">
+            <summary>
+            订单合计金额
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.OrderPreviewItemViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.ArtworkId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.ArtistId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.ArtworkName">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.ArtistName">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.Size">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.Price">
+            <summary>
+            原价
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.OriginalPrice">
+            <summary>
+            优惠后价格
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.Material">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.Edition">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.EditionId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.Padding">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.PaddingId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.Frame">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.FrameId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.ImgUrl">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.Freight">
+            <summary>
+            运费
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.FrameAmount">
+            <summary>
+            装裱费用
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.DiscountAmount">
+            <summary>
+            优惠金额
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.ActivityId">
+            <summary>
+            活动ID
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.IsVipGood">
+            <summary>
+            是否是会员优品
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.IsCanMount">
+            <summary>
+            是否可装裱
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewItemViewModel.ADs">
+            <summary>
+            活动列表
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.ADModel">
+            <summary>
+            广告实体
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ADModel.LogoUrl">
+            <summary>
+            广告logo图片连接
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ADModel.TagName">
+            <summary>
+            活动标签
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ADModel.ActivityId">
+            <summary>
+            活动ID
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ADModel.ActivityType">
+            <summary>
+            活动类型
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ADModel.Content">
+            <summary>
+            广告内容
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ADModel.Url">
+            <summary>
+            广告页面连接
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ADModel.VoucherEnable">
+            <summary>
+            优惠券是否可用
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ADModel.Expand">
+            <summary>
+            其他
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.MpPayReqeustModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.MpPayReqeustModel.Key">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.MpPayReqeustModel.appId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.MpPayReqeustModel.nonceStr">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.MpPayReqeustModel.package">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.MpPayReqeustModel.signType">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.MpPayReqeustModel.timeStamp">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.MpPayReqeustModel.paySign">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.WechatPrepayOrderModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.WechatPrepayOrderModel.AppId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.WechatPrepayOrderModel.Key">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.WechatPrepayOrderModel.PrepayId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.WechatPrepayOrderModel.NonceStr">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.WechatPrepayOrderModel.Package">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.WechatPrepayOrderModel.PartnerId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.WechatPrepayOrderModel.Timestamp">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.WechatPrepayOrderModel.Sign">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.UserMessageModel">
+            <summary>
+            发送用户站内信实体
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserMessageModel.FromUserId">
+            <summary>
+            发件人ID
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserMessageModel.ToUserIds">
+            <summary>
+            收件人ID
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserMessageModel.ToTotalUser">
+            <summary>
+            发送给所有用户
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserMessageModel.Content">
+            <summary>
+            消息内容
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserMessageModel.Type">
+            <summary>
+            消息类型1.站内用户信息2.系统通知
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserMessageModel.Lv">
+            <summary>
+            消息紧急程度1.普通
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserMessageModel.Link">
+            <summary>
+            消息指向的连接
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserMessageModel.ChannelType">
+            <summary>
+            渠道类型 |站内信|APP推送|  只在系统消息时有效
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.AppNotifyModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.AppNotifyModel.Content">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.AppNotifyModel.Href">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.AppNotifyModel.Title">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.AppNotifyModel.SmsMessage">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.CreateAccumulatePointsOrderParamModel">
+            <summary>
+            创建积分订单接口参数实体
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateAccumulatePointsOrderParamModel.PointsGoodsId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateAccumulatePointsOrderParamModel.UserId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateAccumulatePointsOrderParamModel.AddressId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateAccumulatePointsOrderParamModel.AppDesc">
+            <summary>
+            用户客户端描述
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateAccumulatePointsOrderParamModel.Remark">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.PayOrderCreateModel">
+            <summary>
+            支付单创建参数
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.PayOrderCreateModel.AppOsType">
+            <summary>
+            APP系统类型
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.PayOrderCreateModel.AppOsVer">
+            <summary>
+            app系统版本
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.PayOrderCreateModel.Ip">
+            <summary>
+            客户IP
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.PayOrderCreateModel.AppVer">
+            <summary>
+            app版本
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.PayOrderCreateModel.ClientType">
+            <summary>
+            客户端类型
+            可选枚举值:Unknown,PC,WAP,APP,WxMini,WxWAP
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.PayOrderCreateModel.PayAmount">
+            <summary>
+            支付金额
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.PayOrderCreateModel.PayTimeout">
+            <summary>
+            支付超时时间
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.PayOrderCreateModel.PayorderType">
+            <summary>
+            支付单类型 1 艺术品订单支付 2 拍卖保证金
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.CreateOrderParamModel">
+            <summary>
+            创建订单参数
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.IsValidateDiscountRate">
+            <summary>
+            是否验证打折率
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.GoodsId">
+            <summary>
+            拍品ID,拍卖订单时使用
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.ClientType">
+            <summary>
+            客户端类型
+            可选枚举值:Unknown,PC,WAP,APP,WxMini,WxWAP
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.UserId">
+            <summary>
+            使用艺网码的用户
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.PromoCodes">
+            <summary>
+            艺网码集合
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.Goods">
+            <summary>
+            要购买的商品数组
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.OrderType">
+            <summary>
+            要创建的订单类型
+            可选枚举值:Error,AuctionsOrder,ArtworkBuyOrder,DerivativeOrder
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.Remark">
+            <summary>
+            订单备注
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.AddressId">
+            <summary>
+            地址ID
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.AppOsType">
+            <summary>
+            app系统类型,仅在app调用时发送
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.AppOsVer">
+            <summary>
+            app系统版本,仅在app调用时发送
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.AppVer">
+            <summary>
+            app版本,仅在app调用时发送
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.Ip">
+            <summary>
+            客户端IP
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.CpsCookieId">
+            <summary>
+            cps的cookieid
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.VoucherUserId">
+            <summary>
+            用户优惠券id
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.VoucherUserIds">
+            <summary>
+            用户优惠券id数组
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.FreightVoucherUserId">
+            <summary>
+            用户运费券Id
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.AgentCode">
+            <summary>
+            分销跟踪艺网码.
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.InvoiceTitle">
+            <summary>
+            发票抬头
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.CreateOrderParamModel.BusinessTax">
+            <summary>
+            企业税号
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.GoodsParamModel">
+            <summary>
+            商品参数实体
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.GoodsParamModel.ActivityId">
+            <summary>
+            活动ID
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.GoodsParamModel.ArtworkId">
+            <summary>
+            艺术品ID
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.GoodsParamModel.EditionId">
+            <summary>
+            版画ID
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.GoodsParamModel.FrameId">
+            <summary>
+            画框ID
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.GoodsParamModel.PaddingId">
+            <summary>
+            衬纸ID
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.OrderPreviewModel">
+            <summary>
+            订单预览实体
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.Limit5Discount">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.TotalAmount">
+            <summary>
+            作品总价格
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.DiscountAmout">
+            <summary>
+            优惠总金额(艺网码优惠与活动优惠之和)
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.VipDiscountAmount">
+            <summary>
+            会员优惠金额
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.CodeDiscountAmount">
+            <summary>
+            艺网码优惠金额
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.ActionDiscountAmount">
+            <summary>
+            活动优惠金额
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.VoucherAmount">
+            <summary>
+            优惠券优惠金额
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.FreightVoucherAmount">
+            <summary>
+            运费券优惠金额
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.GiftCardAmount">
+            <summary>
+            礼品卡优惠金额
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.Sum">
+            <summary>
+            订单合计金额
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.TotalSumAmount">
+            <summary>
+            所有金额相加,不算折扣
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.Freight">
+            <summary>
+            总运费
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.FrameAmount">
+            <summary>
+            装裱费用
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.ReachedGiftArtworks">
+            <summary>
+            满赠的艺术品列表
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.ReachedGiftAD">
+            <summary>
+            满赠广告
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.Msg">
+            <summary>
+            订单提示信息
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.OrderPreviewModel.Goods">
+            <summary>
+            要购买的商品信息
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.SpuCreateModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SpuCreateModel.CategoryId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SpuCreateModel.SpuName">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SpuCreateModel.Brand">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SpuCreateModel.SpuProps">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SpuCreateModel.Skus">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SpuCreateModel.Manufacturer">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SpuCreateModel.PcView">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SpuCreateModel.MobileView">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SpuCreateModel.PcDetail">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SpuCreateModel.MobileDetail">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.SpuPropModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SpuPropModel.Type">
+            <summary>
+            
+            可选枚举值:Color,Size,Price,String,Weight,ImgUrl,UrlTag,SpecImgs,Value
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SpuPropModel.Name">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SpuPropModel.Value">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.SkuModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SkuModel.Name">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SkuModel.Props">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SkuModel.Stock">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SkuModel.Price">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.SkuPropModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SkuPropModel.Type">
+            <summary>
+            
+            可选枚举值:Color,Size,Price,String,Weight,ImgUrl,UrlTag,SpecImgs,Value
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SkuPropModel.Name">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SkuPropModel.Value">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.ResetPasswordModel">
+            <summary>
+            用户注册实体
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ResetPasswordModel.Phone">
+            <summary>
+            注册手机号
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ResetPasswordModel.Password">
+            <summary>
+            用户密码
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.ResetPasswordModel.Code">
+            <summary>
+            验证码
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.SetPhoneNumberParamsModel">
+            <summary>
+            设置手机号码参数实体
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SetPhoneNumberParamsModel.Phone">
+            <summary>
+            要设置到的手机号码
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.SetPhoneNumberParamsModel.Code">
+            <summary>
+            验证码
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.UserInfoParamModel">
+            <summary>
+            用户信息参数实体
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserInfoParamModel.Nickname">
+            <summary>
+            用户昵称
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserInfoParamModel.Name">
+            <summary>
+            真实姓名
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserInfoParamModel.Gender">
+            <summary>
+            性别
+            可选枚举值:未设置,男,女
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserInfoParamModel.Birthday">
+            <summary>
+            生日
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.UserSendVoucher">
+            <summary>
+            给批量用户发送优惠券
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserSendVoucher.UserIds">
+            <summary>
+            用户的id集合
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserSendVoucher.VoucherId">
+            <summary>
+            要发送的优惠券
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.UserRegModel">
+            <summary>
+            用户注册实体
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.RegType">
+            <summary>
+            账号渠道 0 艺网注册 1 微博登录 2 微信登录
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.AppOsType">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.ClientType">
+            <summary>
+            客户端类型
+            可选枚举值:Unknown,PC,WAP,APP,WxMini,WxWAP
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.WeiboUid">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.WeiboName">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.WeChatOpenId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.WeChatUnionId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.WeChatName">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.FacebookId">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.AppId">
+            <summary>
+            对应的APPid
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.Platform">
+            <summary>
+            对应的第三方平台
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.Email">
+            <summary>
+            邮箱
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.AgentCode">
+            <summary>
+            分销艺网码
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.Phone">
+            <summary>
+            注册手机号
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.Password">
+            <summary>
+            用户密码
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserRegModel.Code">
+            <summary>
+            验证码
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.UserInfoModel">
+            <summary>
+            用户信息实体
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserInfoModel.Nickname">
+            <summary>
+            用户昵称
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserInfoModel.Name">
+            <summary>
+            真实姓名
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserInfoModel.Gender">
+            <summary>
+            性别
+            可选枚举值:未设置,男,女
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserInfoModel.Birthday">
+            <summary>
+            生日
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserInfoModel.HeaderImgUrl">
+            <summary>
+            头像地址
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserInfoModel.Phone">
+            <summary>
+            手机号
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.UserInfoModel.IsAgent">
+            <summary>
+            是否是代理
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.AccessToken">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.AccessToken.access_token">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.AccessToken.CreateTime">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.AccessToken.expires_in">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.AccessToken.IsCompleted">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.AccessToken.errcode">
+            <summary>
+            
+            可选枚举值:系统繁忙,请求成功,获取accessToken时AppSecret错误或者accessToken无效,不合法的凭证类型,不合法的OpenID,不合法的媒体文件类型,不合法的文件类型,不合法的文件大小,不合法的媒体文件id,不合法的消息类型,不合法的图片文件大小,不合法的语音文件大小,不合法的视频文件大小,不合法的缩略图文件大小,不合法的appid,不合法的accessToken,不合法的菜单类型,不合法的按钮个数16,不合法的按钮个数17,不合法的按钮名字长度,不合法的按钮key长度,不合法的按钮url长度,不合法的菜单版本号,不合法的子菜单级数,不合法的子菜单按钮个数,不合法的子菜单按钮类型,不合法的子菜单按钮名字长度,不合法的子菜单按钮key长度,不合法的子菜单按钮url长度,不合法的自定义菜单使用用户,不合法的oauthCode,不合法的refreshToken,不合法的openid列表,不合法的openid列表长度,不合法的请求字符不能包含Unico格式uxxxx格式的字符,不合法的参数,非法的模版Id,不合法的请求格式,不合法的url长度,不合法的分组id,分组名字不合法,缺少accessToken参数,缺少appid参数,缺少refreshToken参数,缺少secret参数,缺少多媒体文件数据,缺少mediaId参数,缺少子菜单数据,缺少oauthcode,缺少openid,AccessToken超时,RefreshToken超时,OauthCode超时,需要get请求,需要post请求,需要https请求,需要接收者关注,需要好友关系,修改模版信息过于频繁,多媒体文件为空,Post的数据包为空,图文消息内容为空,文本消息内容为空,多媒体文件大小超过限制,消息内容超过限制,标题字段超过限制,描述字段超过限制,链接字段超过限制,图片链接字段超过限制,语音播放时间超过限制,图文消息超过限制,接口调用超过限制,创建菜单个数超过限制,回复时间超过限制,系统分组不允许修改,分组名字过长,分组数量超过上限,模板与行业冲突,不存在媒体数据,不存在的菜单版本,不存在的菜单数据,不存在的用户,解析JsonXml内容错误,Api功能未授权,用户未授权该api
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.AccessToken.errmsg">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="T:YW.InnerService.Models.JsApiTicket">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.JsApiTicket.CreateTime">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.JsApiTicket.ticket">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.JsApiTicket.expires_in">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.JsApiTicket.IsCompleted">
+            <summary>
+            
+            
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.JsApiTicket.errcode">
+            <summary>
+            
+            可选枚举值:系统繁忙,请求成功,获取accessToken时AppSecret错误或者accessToken无效,不合法的凭证类型,不合法的OpenID,不合法的媒体文件类型,不合法的文件类型,不合法的文件大小,不合法的媒体文件id,不合法的消息类型,不合法的图片文件大小,不合法的语音文件大小,不合法的视频文件大小,不合法的缩略图文件大小,不合法的appid,不合法的accessToken,不合法的菜单类型,不合法的按钮个数16,不合法的按钮个数17,不合法的按钮名字长度,不合法的按钮key长度,不合法的按钮url长度,不合法的菜单版本号,不合法的子菜单级数,不合法的子菜单按钮个数,不合法的子菜单按钮类型,不合法的子菜单按钮名字长度,不合法的子菜单按钮key长度,不合法的子菜单按钮url长度,不合法的自定义菜单使用用户,不合法的oauthCode,不合法的refreshToken,不合法的openid列表,不合法的openid列表长度,不合法的请求字符不能包含Unico格式uxxxx格式的字符,不合法的参数,非法的模版Id,不合法的请求格式,不合法的url长度,不合法的分组id,分组名字不合法,缺少accessToken参数,缺少appid参数,缺少refreshToken参数,缺少secret参数,缺少多媒体文件数据,缺少mediaId参数,缺少子菜单数据,缺少oauthcode,缺少openid,AccessToken超时,RefreshToken超时,OauthCode超时,需要get请求,需要post请求,需要https请求,需要接收者关注,需要好友关系,修改模版信息过于频繁,多媒体文件为空,Post的数据包为空,图文消息内容为空,文本消息内容为空,多媒体文件大小超过限制,消息内容超过限制,标题字段超过限制,描述字段超过限制,链接字段超过限制,图片链接字段超过限制,语音播放时间超过限制,图文消息超过限制,接口调用超过限制,创建菜单个数超过限制,回复时间超过限制,系统分组不允许修改,分组名字过长,分组数量超过上限,模板与行业冲突,不存在媒体数据,不存在的菜单版本,不存在的菜单数据,不存在的用户,解析JsonXml内容错误,Api功能未授权,用户未授权该api
+            </summary>
+        </member>
+        <member name="P:YW.InnerService.Models.JsApiTicket.errmsg">
+            <summary>
+            
+            
+            </summary>
+        </member>
+    </members>
+</doc>

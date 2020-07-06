@@ -1,0 +1,1670 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YW.Model</name>
+    </assembly>
+    <members>
+        <member name="T:YW.Model.Entitys.Config.ActionGiveVoucherConfigModel">
+            <summary>
+            赠送优惠券类型活动配置实体
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionGiveVoucherConfigModel.Id">
+            <summary>
+             每一次修改时自增
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionGiveVoucherConfigModel.Name">
+            <summary>
+            活动名
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionGiveVoucherConfigModel.MobileADImgUrl">
+            <summary>
+            移动端广告图片
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionGiveVoucherConfigModel.PCADImgUrl">
+            <summary>
+            PC端广告图片
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionGiveVoucherConfigModel.StartTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionGiveVoucherConfigModel.EndTime">
+            <summary>
+            过期时间
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionGiveVoucherConfigModel.Repeat">
+            <summary>
+            是否重复展示
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionGiveVoucherConfigModel.Message2User">
+            <summary>
+            发送给用户的站内信信息
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionGiveVoucherConfigModel.VoucherIds">
+            <summary>
+            要赠送的优惠券ID数组
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.ActionNewUserConfigModel">
+            <summary>
+            新人专区配置
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionNewUserConfigModel.HowDays">
+            <summary>
+            新人注册完成后，多少天内是新人
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionNewUserConfigModel.GiveVipDays">
+            <summary>
+            赠送Vip天数
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionNewUserConfigModel.VoucherIds">
+            <summary>
+            要赠送的优惠券ID数组
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionNewUserConfigModel.SequenceCode">
+            <summary>
+            序列编码
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionNewUserConfigModel.Message2User">
+            <summary>
+            发送给用户的站内信信息
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionNewUserConfigModel.IsEnableAd">
+            <summary>
+            广告入口是否启用
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ActionNewUserConfigModel.AdConfig">
+            <summary>
+            广告配置
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.NewUserAdConfig">
+            <summary>
+            广告配制
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.NewUserAdConfig.ImgUrl">
+            <summary> 图片地址 </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.NewUserAdConfig.AdType">
+            <summary> 广告类型 </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.NewUserAdConfig.Url">
+            <summary> 点击广告时的跳转路径 </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.NewUserAdConfig.IsRepeat">
+            <summary>
+            是否重复展示
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.NewUserAdConfig.IsCanClose">
+            <summary>
+            是否可关闭
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.NewUserAdConfig.IsEnable">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.AdvertisementConfigModel">
+            <summary>
+            广告视图实体
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AdvertisementConfigModel.AppType">
+            <summary>
+            支持的APP类型
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AdvertisementConfigModel.StartTime">
+            <summary>
+            广告开始时间
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AdvertisementConfigModel.EndTime">
+            <summary>
+            广告失效时间
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AdvertisementConfigModel.IsRepeated">
+            <summary>
+            是否重复展示
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AdvertisementConfigModel.ImgUrl">
+            <summary>
+            广告图连接
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AdvertisementConfigModel.Url">
+            <summary>
+            广告点击跳转目标地址
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AdvertisementConfigModel.Enable">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AdvertisementConfigModel.CanClose">
+            <summary>
+            是否可关闭
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AdvertisementConfigModel.Repeat">
+            <summary>
+            是否可重复
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.AppAdvertisementConfigModel">
+            <summary>
+            广告视图实体
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AppAdvertisementConfigModel.StartTime">
+            <summary>
+            广告开始时间
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AppAdvertisementConfigModel.EndTime">
+            <summary>
+            广告失效时间
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AppAdvertisementConfigModel.ImgUrl">
+            <summary>
+            广告图连接
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AppAdvertisementConfigModel.Url">
+            <summary>
+            广告点击跳转目标地址
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AppAdvertisementConfigModel.Enable">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AppAdvertisementConfigModel.CanClose">
+            <summary>
+            是否可关闭
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.AppAdvertisementConfigModel.Repeat">
+            <summary>
+            是否可重复
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.ADViewModel">
+            <summary>
+            广告标签
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ADViewModel.Index">
+            <summary>
+            排序索引
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ADViewModel.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ADViewModel.Summary">
+            <summary>
+            标签说明
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ADViewModel.Url">
+            <summary>
+            广告连接
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ADViewModel.ImgUrl">
+            <summary>
+            图片连接
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ADViewModel.Enable">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ADViewModel.CanClose">
+            <summary>
+            是否可关闭
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ADViewModel.Repeat">
+            <summary>
+            是否可重复
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.ArtworkQueryConfigModel">
+            <summary>
+            查询配置项
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ArtworkQueryConfigModel.DisplayName">
+            <summary>
+            查询展示的名字
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ArtworkQueryConfigModel.Keyword">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ArtworkQueryConfigModel.Color">
+            <summary>
+            颜色
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ArtworkQueryConfigModel.Shape">
+            <summary>
+            形状
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ArtworkQueryConfigModel.Area">
+            <summary>
+            展示空间
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ArtworkQueryConfigModel.Style">
+            <summary>
+            风格
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ArtworkQueryConfigModel.Theme">
+            <summary>
+            主题
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ArtworkQueryConfigModel.Category">
+            <summary>
+            分类
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.BannerConfigModel">
+            <summary>
+            banner结果实体
+            </summary>
+        </member>
+        <member name="M:YW.Model.Entitys.Config.BannerConfigModel.#ctor">
+            <summary>　生成一个实体 </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.BannerConfigModel.Id">
+            <summary> id </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.BannerConfigModel.Name">
+            <summary> 名称 </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.BannerConfigModel.Url">
+            <summary> 点击Banner时的跳转路径 </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.BannerConfigModel.MobileUrl">
+            <summary> 移动端点击Banner时的跳转路径 </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.BannerConfigModel.AppUrl">
+            <summary> App点击Banner时的跳转路径 </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.BannerConfigModel.ImgUrl">
+            <summary> 图片地址 </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.BannerConfigModel.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.BannerConfigModel.Subtitle">
+            <summary>
+            副标题
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.BannerConfigModel.Enable">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.CardConfigModel">
+            <summary>
+            卡片配置
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.CardConfigModel.Index">
+            <summary>
+            排序索引
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.CardConfigModel.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.CardConfigModel.Summary">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.CardConfigModel.CardType">
+            <summary>
+            卡片类型
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.CardConfigModel.ActionUrl">
+            <summary>
+            链接更多
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.CardConfigModel.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.CardConfigModel.IsEnable">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.CardConfigModel.Type">
+            <summary>
+            卡片类型
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.Item">
+            <summary>
+            数据项目
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.Item.ImgUrl">
+            <summary>
+            图片地址
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.Item.Url">
+            <summary>
+            跳转到的连接
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.Item.WebUrl">
+            <summary>
+            web用的url
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.Item.AppUrl">
+            <summary>
+            app用的url
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.Item.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.Item.Summary">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.Item.Price">
+            <summary>
+            价格
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.Item.Enable">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.CommonCardType">
+            <summary>
+            通用卡片类型【字段Type】
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.CardType">
+            <summary>
+            艺术品类型枚举
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardType.Sun">
+            <summary>
+            星期日
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardType.Mon">
+            <summary>
+            周一
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardType.Tue">
+            <summary>
+            周二
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardType.Wed">
+            <summary>
+            周三
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardType.Thu">
+            <summary>
+            周四
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardType.Fri">
+            <summary>
+            周五
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardType.Sat">
+            <summary>
+            周六
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardType.ActivityZone">
+            <summary>
+            活动专区
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardType.ArtisticView">
+            <summary>
+            艺术视野
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardType.ArtisticLives">
+            <summary>
+            艺居生活
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardType.ArtisticGifts">
+            <summary>
+            甄选艺礼
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardType.HonourableCustomized">
+             <summary>
+            尊贵定制
+             </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardType.YwartsIntroduce">
+             <summary>
+            走进艺网
+             </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.CardTypeCN">
+            <summary>
+            艺术品类型枚举
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardTypeCN.周日">
+            <summary>
+            周日
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardTypeCN.周一">
+            <summary>
+            周一
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardTypeCN.周二">
+            <summary>
+            周二
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardTypeCN.周三">
+            <summary>
+            周三
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardTypeCN.周四">
+            <summary>
+            周四
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardTypeCN.周五">
+            <summary>
+            周五
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardTypeCN.周六">
+            <summary>
+            周六
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardTypeCN.艺术视野">
+            <summary>
+            艺术视野
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardTypeCN.甄选艺礼">
+            <summary>
+            甄选艺礼
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardTypeCN.尊贵定制">
+             <summary>
+            尊贵定制
+             </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.CardTypeCN.走进艺网">
+             <summary>
+            走进艺网
+             </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.DiscountActionConfigBaseModel.Type">
+            <summary>
+            活动类型
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.DiscountActionConfigBaseModel.ListDiscoountImgUrl">
+            <summary>
+            列表页图标
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.DiscountActionConfigBaseModel.TagName">
+            <summary>
+            活动名称标签
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.DiscountActionConfigBaseModel.ADLogoUrl">
+            <summary>
+            详情页广告图标
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.DiscountActionConfigBaseModel.ADUrl">
+            <summary>
+            详情页广告跳转连接
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.DiscountActionConfigBaseModel.ADContent">
+            <summary>
+            详情页广告正文
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.DiscountActionConfigBaseModel.ArtworkIds">
+            <summary>
+            只限这些艺术品.为空时则表示全部
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.DiscountActionConfigBaseModel.ExcludeArtworkIds">
+            <summary>
+            要排除的艺术品
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.DiscountActionConfigBaseModel.AgentIds">
+            <summary>
+            只限这些分销可用,
+            为空时表示所有分销都可以用
+            插入一个0可让所有分销都主动参加后才可使用
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.DiscountActionConfigBaseModel.AgentSalePercent">
+            <summary>
+            本次活动分销用户抵扣比例
+            参与这次活动的分销订单.佣金降少
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.DiscountActionConfigBaseModel.GoodsType">
+            <summary>
+            参与活动的品类范围
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.DiscountActionConfigBaseModel.ArtworkTypes">
+            <summary>
+            参与活动的品类范围,多选范围。为空时代表全部
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.DiscountActionConfigBaseModel.Enable">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.DiscountActionConfigBaseModel.VoucherEnable">
+            <summary>
+            优惠券是否可用
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.ManJianActionConfig">
+            <summary>
+            满减活动
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ManJianActionConfig.DiscountAmounts">
+            <summary>
+            满减金额
+            key:满多少
+            value:减多少
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ManJianActionConfig.IsLoop">
+            <summary>
+            是否是每满减活动
+            为true时DiscountAmounts只有一个值
+            </summary>
+        </member>
+        <member name="M:YW.Model.Entitys.Config.ManJianActionConfig.GetDiscountAmount(System.Decimal)">
+            <summary>
+            获取满减金额
+            </summary>
+            <param name="amount"></param>
+            <returns></returns>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.ManZenActionConfig">
+            <summary>
+            满增活动
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.ManZenActionConfig.Gifts">
+            <summary>
+            满赠配置
+            key:满多少
+            value:赠品的业务id(艺术品时为艺术品id,优惠券时为优惠券id)
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.SaleActionConfig">
+            <summary>
+            打折活动
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.SetPriceActionConfig">
+            <summary>
+            指定价格类型活动
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.VipPriceActionConfig">
+            <summary>
+            指定VIP优选类型活动
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.MaiZenActionConfig">
+            <summary>
+            买赠活动
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.MatchStylePageConfig">
+            <summary>
+            尺寸推荐页面配置
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.MatchSizePageConfig">
+            <summary>
+            尺寸推荐页面配置
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.MatchSizePageConfig.Anchors">
+            <summary>
+            key:name
+            value:icon
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.VoucherConfigModel">
+            <summary>
+            优惠券配置实体
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.VoucherConfigModel.ArtworkIds">
+            <summary>
+            可用的作品数组.为空时不限制
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.VoucherConfigModel.ArtworkTypes">
+            <summary>
+            可用作品类型枚举,为空时不限制
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.VoucherConfigModel.Superpositioned">
+            <summary>
+            是否可叠加
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.Config.VoucherConfigModel.StartTime">
+            <summary>
+            优惠券可用时间,为空时为领券时间,
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.Config.ArtworkTypesFlag">
+            <summary>
+            艺术品类型枚举
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.ArtworkTypesFlag.Null">
+            <summary>
+            为空
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.ArtworkTypesFlag.Buy">
+            <summary>
+            潜力收藏
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.ArtworkTypesFlag.MarkArt">
+            <summary>
+            入门收藏
+            </summary>
+        </member>
+        <member name="F:YW.Model.Entitys.Config.ArtworkTypesFlag.Collect">
+             <summary>
+            名作收藏
+             </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.SkuValues.ArtworkBaseInfoModel">
+            <summary>
+             艺术品基础信息实体
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.SkuValues.SizeValueModel">
+            <summary>
+            尺寸实体
+            </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.YW2016.ClassInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.YW2016.ClassInfo.Id">
+            <summary>  </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.YW2016.ClassInfo.ClassName">
+            <summary>  </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.YW2016.ClassInfo.CreateTime">
+            <summary>  </summary>
+        </member>
+        <member name="T:YW.Model.Entitys.YW2016.StudentInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.YW2016.StudentInfo.Id">
+            <summary>  </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.YW2016.StudentInfo.Name">
+            <summary>  </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.YW2016.StudentInfo.Age">
+            <summary>  </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.YW2016.StudentInfo.CreateTime">
+            <summary>  </summary>
+        </member>
+        <member name="P:YW.Model.Entitys.YW2016.StudentInfo.Remark">
+            <summary>  </summary>
+        </member>
+        <member name="F:YW.Model.Enums.AdSpaceEnum.PCSearchResult">
+            <summary>
+            pc搜索结果
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.AdSpaceEnum.MobileBuyArtwork">
+            <summary>
+            移动端/APP 购艺术条件页顶端
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.AdSpaceEnum.NoEmptyBuyCart">
+            <summary>
+            空购物车时
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.AdSpaceEnum.PCArtworkDetail">
+            <summary>
+            pc详情页广告
+            </summary>
+        </member>
+        <member name="T:YW.Model.Enums.AdvertiseType">
+            <summary>
+            广告类型
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.AdvertiseType.PcHomeBanner">
+            <summary>
+            pc首页banner
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.AdvertiseType.InternationalUnitHomeBanner">
+            <summary> 国际单元首页轮播</summary>
+        </member>
+        <member name="F:YW.Model.Enums.AdvertiseType.PublicProjectHomeBanner">
+            <summary> 公共项目轮播</summary>
+        </member>
+        <member name="T:YW.Model.Enums.CacheKey">
+            <summary>
+            系统缓存Key
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.CacheKey.PcHomeBanner">
+            <summary>
+            PC首页Banner,缓存1小时
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.CacheKey.PcHomeTopBanner">
+            <summary>
+            PC顶部广告
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.CacheKey.PcTopicInfo">
+            <summary>
+            PC首页专题
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.CacheKey.HomeCateRecommend">
+            <summary>
+            首页分类推荐
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.CacheKey.HomeArtistRecommend">
+            <summary>
+            首页艺术家推荐
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.CacheKey.ArtistDynamic">
+            <summary>
+            艺术家动态
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.CacheKey.AiteArtFairAllOrg">
+            <summary>
+            所有机构
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.CacheKey.AiteArtFairAllCuration">
+            <summary>
+            所有策展主题
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.CacheKey.AiteArtFairAllPublicWork">
+            <summary>
+            所有公共项目作品
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.CacheKey.AiteArtFairAllPublicWorkId">
+            <summary>
+            所有公共项目作品Id
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.CacheKey.NewUserConfig">
+            <summary>
+            新人配置数据
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.CacheKey.IP_Access_BLACKLIST">
+             <summary>
+            访问系统的ip黑名单缓存key
+             </summary>
+        </member>
+        <member name="T:YW.Model.Enums.AppConfigKey">
+            <summary>
+            Appconfig
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.AppConfigKey.SysConfigMain">
+            <summary> 主配置缓存Key </summary>
+        </member>
+        <member name="F:YW.Model.Enums.AppConfigKey.SysConfigMain_Expire">
+            <summary> 缓存时间（单位：分钟）一天 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.AppConfigKey.AppConfigAdvertisement">
+            <summary> 开屏广告Key </summary>
+        </member>
+        <member name="F:YW.Model.Enums.AppConfigKey.AppConfigAdvertisement_Expire">
+            <summary> 缓存时间（单位：分钟）一天 </summary>
+        </member>
+        <member name="T:YW.Model.Enums.AppViewKey">
+            <summary>
+            AppViewController
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.AppViewKey.AppIndexNew3">
+            <summary> App首页接口 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.AppViewKey.AppIndexNew3_Expire">
+            <summary> 缓存时间（单位：分钟） </summary>
+        </member>
+        <member name="F:YW.Model.Enums.AppViewKey.AppIndexPrint">
+            <summary> App首页 入门收藏 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.AppViewKey.AppIndexOriginal">
+            <summary> App首页 潜力收藏 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.AppViewKey.AppIndexCollectRecWork">
+            <summary> App首页 名作收藏推荐作品 </summary>
+        </member>
+        <member name="T:YW.Model.Enums.LiveCacheKey">
+            <summary>
+             直播缓存key
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.LiveCacheKey.LiveDetail">
+            <summary> 直播详情 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.LiveCacheKey.LiveDetail_Expire">
+            <summary> 缓存时间（单位：分钟） </summary>
+        </member>
+        <member name="F:YW.Model.Enums.LiveCacheKey.AnchorDetail">
+            <summary> 主播详情 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.LiveCacheKey.LiveRelArtworks">
+            <summary> 直播对应的相关作品列表 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.LiveCacheKey.LiveInteratArtwork">
+            <summary> 直播对应的互动作品 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.LiveCacheKey.LiveRewardAmounts">
+            <summary> 直播打赏金额列表 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.LiveCacheKey.LiveNotice">
+            <summary> 直播公告 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.LiveCacheKey.LiveNewComments">
+            <summary> 最新的评论 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.LiveCacheKey.LiveAllComments">
+            <summary> 全部评论 </summary>
+        </member>
+        <member name="T:YW.Model.Enums.UserCacheKey">
+            <summary>
+            用户相关的缓存Key
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.UserCacheKey.UserInfo">
+            <summary> 用户信息 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.UserCacheKey.UserInfo_Expire">
+            <summary> 缓存一个小时 </summary>
+        </member>
+        <member name="T:YW.Model.Enums.ConfigKey">
+            <summary>
+            配置名称枚举
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.Root">
+            <summary>
+            配置分组
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.TodaySpecial">
+            <summary>
+            每日特惠配置
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.NewArtwork">
+            <summary>
+            新作推荐配置
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.AppCard">
+            <summary>
+            app首页卡片
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.Main">
+            <summary>
+            APP主配置
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.Advertisement">
+            <summary>
+            APP广告配置
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.FrequentQueries">
+            <summary>
+            常用查询条件配置
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.AppBanner">
+            <summary>
+            app首页banner
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.MarkArtArtistList">
+            <summary>
+            造艺艺术家
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.AppBannerNew">
+            <summary>
+            app首页banner
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.CollectBanner">
+            <summary>
+            app藏艺术banner
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.InteractiveFeatures">
+            <summary>
+            获取互动功能列表
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.IndexFirstGroup">
+            <summary>
+            首页第一个推荐艺术品序列
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.IndexSpecialGroup">
+            <summary>
+            首页推荐艺术品序列
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.HotArtworks">
+            <summary>
+            热门艺术品列表5个
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.HistoryHotArtworks">
+            <summary>
+            历史热门作品
+            只保存7天
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.WeekHotArtworks">
+            <summary>
+            周热门艺术品列表3个
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.HistoryWeekHotArtworks">
+            <summary>
+            周热门艺术品列表只保存3周
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.HotTags">
+            <summary>
+            热门标签列表
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.IndexAd">
+            <summary>
+            首页弹窗广告 ADViewModel
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.IndexAd_Float">
+            <summary>
+            首页浮动广告 ADViewModel
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.PrintIndexAd">
+            <summary>
+            造艺首页广告 ADViewModel
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.PrintIndexBanner">
+            <summary>
+            造艺首页banner 
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.PrintIndexBannerNew">
+            <summary>
+            新造艺首页banner 
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.AppShoppingCartAd">
+            <summary>
+            购物车下栏广告
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.AppIndexCustomMenus">
+            <summary>
+            APP首页的自定义菜单
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ConfigKey.ActionGiveVoucher">
+            <summary>
+            赠送优惠券类型活动
+            </summary>
+        </member>
+        <member name="T:YW.Model.Enums.DailyReportType">
+            <summary>
+            每日报表类型  1.艺术品点击量  2.艺术品收藏量 3.艺术家点赞 4. 艺术家点击
+            </summary>
+        </member>
+        <member name="T:YW.Model.Enums.OrderType">
+            <summary>
+            主订单类型
+            1.艺术品订单，2积分订单  3.人民币购买vip资格  4.拍卖保证金支付
+            </summary>
+        </member>
+        <member name="T:YW.Model.Enums.Platforms">
+            <summary>
+            项目所用的第三方平台
+            </summary>
+        </member>
+        <member name="T:YW.Model.Enums.ResultCodeEnum">
+            <summary>
+            同意操作/查询结果编码
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ResultCodeEnum.Succeed">
+            <summary> 成功 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ResultCodeEnum.UndefinedError">
+            <summary> 未知错误 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ResultCodeEnum.ParamsError">
+            <summary> 参数错误 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ResultCodeEnum.FreqOutOfLimit">
+            <summary> 操作频率超出限制 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ResultCodeEnum.Unauthorized">
+            <summary> 没有权限 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ResultCodeEnum.ExternalServiceUnavailable">
+            <summary> 外部服务不可用 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ResultCodeEnum.UnCatchError">
+            <summary> 服务器未捕获异常 </summary>
+        </member>
+        <member name="F:YW.Model.Enums.ResultCodeEnum.VersionDisable">
+            <summary> APP版本已禁用 </summary>
+        </member>
+        <member name="T:YW.Model.Enums.SkuValueType">
+            <summary>
+            SKU值类型枚举
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.SkuValueType.Color">
+            <summary>
+            颜色值
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.SkuValueType.Size">
+            <summary>
+            尺寸值
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.SkuValueType.Price">
+            <summary>
+            价格
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.SkuValueType.String">
+            <summary>
+            描述字符串
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.SkuValueType.Weight">
+            <summary>
+            重量 单位:克
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.SkuValueType.ImgUrl">
+            <summary>
+            图片地址
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.SkuValueType.UrlTag">
+            <summary>
+            连接地址
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.SkuValueType.SpecImgs">
+            <summary>
+            商品展示图片
+            值类型:字符串数组
+            </summary>
+        </member>
+        <member name="F:YW.Model.Enums.SkuValueType.Value">
+            <summary>
+            大小值,小数类型
+            </summary>
+        </member>
+        <member name="T:YW.Model.Enums.WebStandardColor">
+            <summary>
+            web标准色
+            </summary>
+        </member>
+        <member name="T:YW.Model.Enums.WebStandardColorCN">
+            <summary>
+            web标准色中文枚举
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.AccumulatePoint.UpdateAccumulatePointVipPriceMsg">
+            <summary>
+            更新vip商品的价格
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.Agent.AgentUnreserveArtworkMsg">
+            <summary>
+            释放分销预定的作品
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.Artwork.ArtistCreate.Date">
+            <summary>
+            当前日期
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.Artwork.ArtistUpdate.Date">
+            <summary>
+            当前日期
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.Artwork.ArtworkUpdate.Date">
+            <summary>
+            当前日期
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.Artwork.ArtworkCreate.Date">
+            <summary>
+            当前日期
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.Auction.BeforeRoundStartMsg">
+            <summary>
+            拍卖专场开始之前
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.Auction.RoundStartMsg">
+            <summary>
+            拍卖专场开始
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.Auction.RoundPreviewMsg">
+            <summary>
+            拍卖专场开始预览
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.Auction.RoundOnlineMsg">
+            <summary>
+            拍卖专场上线
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.Auction.BeforeRoundEndMsg">
+            <summary>
+            拍卖专场结束之前
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.Auction.RoundEndMsg">
+            <summary>
+            拍卖专场结束
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.LogMsg">
+            <summary>
+            创建定时任务消息实体
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.LogMsg.Event">
+            <summary>
+            制定当前消息类型
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.AgentPostingCommissionMsg">
+            <summary>
+            分销佣金入账消息
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.ArtworkOrderArriveTimeoutMsg">
+            <summary>
+            订单送达超时
+            已送达7天后.将订单自动改为已完成
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.ArtworkOrderDeliveryTimeoutMsg">
+            <summary>
+            订单已全部发货后20天算作寄送超时自动改为已收货
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.AuctionArtworkOrderTimeoutMsg">
+            <summary>
+            拍下商品创建订单超时.
+            拍下后2小时内没有创建订单
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.DailyTasksMsg">
+            <summary>
+            每日任务消息
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.DailyTasksMsg.Date">
+            <summary>
+            当前日期
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.CancelArtworkOrderMsg">
+            <summary>
+            订单创建消息.
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.Order.ArtworkOrderDeliveredMsg">
+            <summary>
+            订单全部发货消息
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.Order.ArtworkOrderSendPayTimeoutEmailToSalesmanMsg">
+            <summary>
+            订单创建后5分钟发出支付超时提醒给运维人员
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.ArtworkOrderPayd">
+            <summary>
+            订单已支付
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.ArtworkOrderCompleted">
+            <summary>
+            订单完成消息
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.ArtworkOrderPayTimeoutMsg">
+            <summary>
+            订单支付超时
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.CreateArtworkOrderMsg">
+            <summary>
+            订单创建消息.
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.EventType">
+            <summary>
+            系统所有事件类型枚举
+            </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.TimedTask">
+            <summary>
+            定时任务,
+            定时发送消息触发指定事件
+            </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.DailyTasks">
+            <summary> 每日任务 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.Log">
+            <summary>
+            日志消息
+            </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.CreateArtworkOrder">
+            <summary>
+            创建订单
+            </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.CancelArtworkOrder">
+            <summary> 取消订单 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.ArtworkOrderPayd">
+            <summary>
+            订单支付成功时
+            </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.ArtworkOrderArriveTimeout">
+            <summary>
+            送达超时订单
+            </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.ArtworkOrderDeliveryTimeout">
+            <summary>
+            寄送中超时订单
+            </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.AuctionArtworkOrderTimeout">
+            <summary>
+            拍品订单超时
+            </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.AgentPostingCommission">
+            <summary>
+            佣金入账
+            订单完成后23天,收获30天后
+            </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.ArtworkOrderPayTimeout">
+            <summary>
+            订单支付超时
+            </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.ArtworkOrderSendPayTimeoutEmailToSalesman">
+            <summary>
+            订单支付超时给业务发送短信
+            </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.ArtworkOrderDelivered">
+            <summary>
+            订单已全部发货
+            </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.ArtworkOrderConfirmReceipt">
+            <summary>
+            订单确认收货事件
+            1.后台改为收获
+            2.商品寄出20天后自动收货(将商品改为已送达)
+            </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.ArtworkOrderCompleted">
+            <summary>
+            订单完成
+            确认收货7天后
+            </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.Auction_RoundEnd">
+            <summary> 拍卖专场结束 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.Auction_BeforeRoundEnd">
+            <summary> 拍卖专场结束之前 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.Auction_RoundOnline">
+            <summary> 拍卖专场上线 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.Auction_StartRoundPreview">
+            <summary> 拍卖专场开始预展 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.Auction_StartRound">
+            <summary> 开始拍卖专场 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.Auction_BeforeStartRound">
+            <summary> 开始拍卖专场之前 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.UserReg">
+            <summary> 用户注册事件 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.AgentUnreserveArtwork">
+            <summary> 取消锁定艺术品 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.ArtworkCreate">
+            <summary> 艺术品创建 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.ArtworkUpdate">
+            <summary> 艺术品编辑 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.ArtistCreate">
+            <summary> 艺术家创建 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.ArtistUpdate">
+            <summary> 艺术家编辑 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.Message_Push">
+            <summary> 定时推送 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.Message_Inner">
+            <summary> 定时站内信 </summary>
+        </member>
+        <member name="F:YW.Model.Message.EventType.UpdateVipPrice">
+            <summary> 定时更新vip价格 </summary>
+        </member>
+        <member name="T:YW.Model.Message.IEventMsg">
+            <summary>
+            事件消息实体基类
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.IEventMsg.Event">
+            <summary>
+            事件类型
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.IEventMsg.RetryCount">
+            <summary>
+            已重试次数
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.TimedTaskMsg">
+            <summary>
+            创建定时任务消息实体
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.TimedTaskMsg.Event">
+            <summary>
+            制定当前消息类型
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.TimedTaskMsg.RetryCount">
+            <summary>
+            已重试次数
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.TimedTaskMsg.TaskId">
+            <summary>
+            任务唯一id
+            以业务名称+id的方式命名
+            如:OrderCreate_1000
+            用于重复触发时的合并操作
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.TimedTaskMsg.IsTimesUp">
+            <summary>
+            是否是时间到的消息
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.TimedTaskMsg.StartTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.TimedTaskMsg.MsgTypeFullName">
+            <summary>
+            要发送的消息类型完整名称
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.TimedTaskMsg.MsgJson">
+            <summary>
+            要发送的消息实体json序列化
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.TimedTaskMsg.Msg">
+            <summary>
+            要发送的消息
+            </summary>
+        </member>
+        <member name="T:YW.Model.Message.UserRegMsg">
+            <summary> 用户注册消息 </summary>
+        </member>
+        <member name="P:YW.Model.Message.UserRegMsg.UserId">
+            <summary>
+            新注册的用户id
+            </summary>
+        </member>
+        <member name="P:YW.Model.Message.UserRegMsg.Event">
+            <summary> 消息类型 </summary>
+        </member>
+        <member name="P:YW.Model.Message.UserRegMsg.RetryCount">
+            <summary>　已重试次数 </summary>
+        </member>
+        <member name="T:YW.Model.ResultModel">
+            <summary>
+            统一返回值实体
+            </summary>
+        </member>
+        <member name="M:YW.Model.ResultModel.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="P:YW.Model.ResultModel.BussinessCode">
+            <summary> 业务CODE </summary>
+        </member>
+        <member name="P:YW.Model.ResultModel.Succeed">
+            <summary> 操作/查询是否成功 </summary>
+        </member>
+        <member name="P:YW.Model.ResultModel.Msg">
+            <summary> 提示消息 </summary>
+        </member>
+        <member name="P:YW.Model.ResultModel.ResultCode">
+            <summary> 结果编码 </summary>
+        </member>
+        <member name="M:YW.Model.ResultModel.Ok">
+            <summary> 返回一个操作成功结果 </summary>
+        </member>
+        <member name="M:YW.Model.ResultModel.Failed(System.String)">
+            <summary> 返回一个操作失败结果 </summary>
+        </member>
+        <member name="M:YW.Model.ResultModel.Failed(System.String,YW.Model.Enums.ResultCodeEnum)">
+            <summary> 返回一个操作失败结果 </summary>
+        </member>
+        <member name="T:YW.Model.QueryResultModel`1">
+            <summary> 查询结果返回值实体 </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:YW.Model.QueryResultModel`1.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="P:YW.Model.QueryResultModel`1.Body">
+            <summary> 查询结果实体 </summary>
+        </member>
+        <member name="M:YW.Model.QueryResultModel`1.Failed(System.String)">
+            <summary> 返回一个操作失败结果 </summary>
+        </member>
+        <member name="M:YW.Model.QueryResultModel`1.Failed(System.String,YW.Model.Enums.ResultCodeEnum)">
+            <summary> 返回一个操作失败结果 </summary>
+        </member>
+        <member name="T:YW.Model.ObjectExtend">
+            <summary> 查询结果返回值扩展 </summary>
+        </member>
+        <member name="M:YW.Model.ObjectExtend.AsQueryResult``1(``0)">
+            <summary> 将当前对象转为查询成功结果 </summary>
+        </member>
+        <member name="T:YW.Model.PagedResultModel`1">
+            <summary>
+            分页结果实体
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:YW.Model.PagedResultModel`1.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="P:YW.Model.PagedResultModel`1.Page">
+            <summary>
+            当前页码
+            </summary>
+        </member>
+        <member name="P:YW.Model.PagedResultModel`1.PageSize">
+            <summary>
+            每页行数
+            </summary>
+        </member>
+        <member name="P:YW.Model.PagedResultModel`1.TotalPage">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:YW.Model.PagedResultModel`1.RowCount">
+            <summary>
+            总行数
+            </summary>
+        </member>
+        <member name="M:YW.Model.PagedResultModel`1.Failed(System.String)">
+            <summary> 返回一个操作失败结果 </summary>
+        </member>
+    </members>
+</doc>

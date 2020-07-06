@@ -1,0 +1,103 @@
+<#@ include file="../ApiClient.Core.ttinclude" #> 
+<#@ assembly name="Newtonsoft.Json.dll" #>
+<#@ import namespace="System.Net" #>
+<#@ output extension=".cs" #>
+<#
+    WebClient client=new WebClient{Encoding = System.Text.Encoding.UTF8}; 
+    string json=client.DownloadString("http://devinnerservice.ywart.com:80/swagger/docs/v1")
+        .Replace("\"$ref\"","\"_ref\"")
+        .Replace("\"enum\"","\"_enum\"")
+        .Replace("\"in\"","\"_in\"") ;
+    SwaggerServerDesc desc = Newtonsoft.Json.JsonConvert.DeserializeObject<SwaggerServerDesc>(json);
+    var apis=desc.paths.SelectMany(m =>
+        m.Value.Select(p => 
+        new {
+            path = m.Key,
+            method = p.Key,
+            api = p.Value,
+            tag = p.Value.tags.Single() }))
+        .GroupBy(m=>m.tag);
+#>
+namespace YW.InnerService.Apis
+{
+    using System;
+    using YW.InnerService.Models;
+    using YW.InnerService.Client;
+    using YW.Model;
+    using System.Threading.Tasks;
+    using System.Collections.Generic;
+    using YW.Model.Entitys.YW2016; 
+<# 
+    foreach(var path in apis)
+    { 
+#>
+    
+    /// <summary>
+    /// <#=path.Key #>
+    /// </summary>
+    public partial class <#=path.Key #>Api:ApiBase
+    {
+ <#
+        foreach(var api in path)
+        {
+            if(!api.api.responses.ContainsKey("200"))
+            {
+                continue;
+}
+
+            var rt=api.api.responses["200"].schema.GetTypeName();
+#>
+        /// <summary>
+        /// <#=(api.api.summary??"").Replace("\r\n","\r").Replace("\r","") #>
+        /// </summary>
+        public <#= rt #> <#=api.api.GetMethodName() #>(<#=api.api.GetParamString() #>)
+        {
+            var _path="<#=api.path #>";
+            var _method=System.Net.Http.HttpMethod.<#=api.method[0].ToString().ToUpper() + api.method.Substring(1) #>;
+            object _body=<#=api.api.parameters!=null&&api.api.parameters.Any(a=>a._in=="body")?api.api.parameters.Single(a=>a._in=="body").name:"null" #>;
+            Dictionary<string, object> _urlparam = new Dictionary<string, object>
+            {
+                <#= string.Join(",\r\n                ",api.api.parameters==null?new List<string>():api.api.parameters
+                        .Where(m=>m._in=="path")
+                        .Select(a=>"{ \""+a.name+"\","+a.name+" }") ) #>
+            };
+            var response = Send(_method, _path, _urlparam, _body).Content.ReadAsStringAsync().Result;
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<<#= rt#>>(response);
+        }
+        /// <summary>
+        /// <#=(api.api.summary??"").Replace("\r\n","\r").Replace("\r","") #>
+        /// </summary>
+        public async Task<<#= rt #>> <#=api.api.GetMethodName() #>Async(<#=api.api.GetParamString() #>)
+        {
+            var _path="<#=api.path #>";
+            var _method=System.Net.Http.HttpMethod.<#=api.method[0].ToString().ToUpper() + api.method.Substring(1) #>;
+            object _body=<#=api.api.parameters!=null&&api.api.parameters.Any(a=>a._in=="body")?api.api.parameters.Single(a=>a._in=="body").name:"null" #>;
+            Dictionary<string, object> _urlparam = new Dictionary<string, object>
+            {
+                <#= string.Join(",\r\n                ",api.api.parameters==null?new List<string>():api.api.parameters
+                        .Where(m=>m._in=="path")
+                        .Select(a=>"{ \""+a.name+"\","+a.name+" }") ) #>
+            };
+			
+            try
+            {
+				var response =await SendAsync(_method, _path, _urlparam, _body);
+				var jsonstr =await response.Content.ReadAsStringAsync();
+				return Newtonsoft.Json.JsonConvert.DeserializeObject<<#= rt#>>(jsonstr); 
+            }
+            catch (Exception)
+            {
+                return <#= rt#>.Failed("调用内部服务{<#=path.Key #>Api.<#=api.api.GetMethodName() #>}出错.请联系管理员");
+            }
+        }
+
+
+<#
+        }
+ #>
+    }
+<# 
+    }
+#>
+
+}

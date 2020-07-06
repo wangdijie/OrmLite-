@@ -1,0 +1,45 @@
+<#@ include file="../ApiClient.Core.ttinclude" #> 
+<#@ assembly name="Newtonsoft.Json.dll" #>
+<#@ import namespace="System.Net" #>
+<#@ output extension=".cs" #>
+<#WebClient client=new WebClient{Encoding = System.Text.Encoding.UTF8}; 
+    string json=client.DownloadString("http://devinnerservice.ywart.com:80/swagger/docs/v1")
+        .Replace("\"$ref\"","\"_ref\"")
+        .Replace("\"enum\"","\"_enum\"")
+        .Replace("\"in\"","\"_in\"") ;
+    SwaggerServerDesc desc = Newtonsoft.Json.JsonConvert.DeserializeObject<SwaggerServerDesc>(json); 
+#>
+namespace YW.InnerService.Models
+{
+    using System;
+    
+
+<# 
+    foreach(var m in desc.definitions.Where(m=>!m.Key.StartsWith("QueryResultModel")&&!m.Key.Contains("ResultModel")))
+    { 
+#>
+    /// <summary>
+    /// <#=m.Value.description??"" #>
+    /// </summary>
+    public class <#=m.Key#>
+    {
+<#
+    foreach(var p in m.Value.properties)
+    {
+#>
+        /// <summary>
+        /// <#=p.Value.description??"" #>
+        /// <#=p.Value._enum!=null?"可选枚举值:"+string.Join(",",p.Value._enum):"" #>
+        /// </summary>
+        public <#=p.Value.GetTypeName() #> <#=p.Key #> { get; set; }
+<#
+    }
+#>
+    }
+
+<#
+    }
+
+#>
+
+}

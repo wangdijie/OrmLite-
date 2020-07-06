@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3421A3B5-F479-4611-B192-03AE2C55C542}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YW.Model</RootNamespace>
+    <AssemblyName>YW.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\YW.Model.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\YW.Model.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Common.4.5.8\lib\net45\ServiceStack.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Interfaces.4.5.8\lib\portable-wp80+sl5+net45+win8+wpa81+monotouch+monoandroid+xamarin.ios10\ServiceStack.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.OrmLite.4.5.8\lib\net45\ServiceStack.OrmLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite.MySql, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.OrmLite.MySql.4.5.8\lib\net45\ServiceStack.OrmLite.MySql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=4.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\ServiceStack.Text\4.5.8\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entitys\Config\ActionGiveVoucherConfigModel.cs" />
+    <Compile Include="Entitys\Config\ActionNewUserConfigModel.cs" />
+    <Compile Include="Entitys\Config\AdvertisementConfigModel.cs" />
+    <Compile Include="Entitys\Config\AppADConfigModel.cs" />
+    <Compile Include="Entitys\Config\ArtworkQueryConfigModel.cs" />
+    <Compile Include="Entitys\Config\BannerConfigModel.cs" />
+    <Compile Include="Entitys\Config\CardConfigModel.cs" />
+    <Compile Include="Entitys\Config\DiscountActionConfig.cs" />
+    <Compile Include="Entitys\Config\MatchStylePageConfig.cs" />
+    <Compile Include="Entitys\Config\MatchSizePageConfig.cs" />
+    <Compile Include="Entitys\Config\TodaySpecialModel.cs" />
+    <Compile Include="Entitys\Config\VoucherConfigModel.cs" />
+    <Compile Include="Entitys\FromT4Attribute.cs" />
+    <Compile Include="Entitys\SkuValues\ArtworkBaseInfoModel.cs" />
+    <Compile Include="Entitys\SkuValues\SizeValueModel.cs" />
+    <Compile Include="Entitys\SkuValues\UrlTag.cs" />
+    <Compile Include="Entitys\YW2016\T4_ClassInfo.cs">
+      <DependentUpon>OrmLite.Poco.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entitys\YW2016\T4_StudentInfo.cs">
+      <DependentUpon>OrmLite.Poco.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\AdSpaceEnum.cs" />
+    <Compile Include="Enums\AdvertiseType.cs" />
+    <Compile Include="Enums\ArtistNoticeType.cs" />
+    <Compile Include="Enums\CacheKey.cs" />
+    <Compile Include="Enums\ConfigKey.cs" />
+    <Compile Include="Enums\DailyReportType.cs" />
+    <Compile Include="Enums\OrderType.cs" />
+    <Compile Include="Enums\PayType.cs" />
+    <Compile Include="Enums\Platforms.cs" />
+    <Compile Include="Enums\RecommendState.cs" />
+    <Compile Include="Enums\ResultCodeEnum.cs" />
+    <Compile Include="Enums\SkuValueType.cs" />
+    <Compile Include="Enums\VerificationCodeEnum.cs" />
+    <Compile Include="Enums\WebColors.cs" />
+    <Compile Include="HasId.cs" />
+    <Compile Include="Message\AccumulatePoint\UpdateAccumulatePointVipPriceMsg.cs" />
+    <Compile Include="Message\Agent\AgentUnreserveArtworkMsg.cs" />
+    <Compile Include="Message\Artwork\ArtistCreate.cs" />
+    <Compile Include="Message\Artwork\ArtistUpdate.cs" />
+    <Compile Include="Message\Artwork\ArtworkUpdate.cs" />
+    <Compile Include="Message\Artwork\ArtworkCreate.cs" />
+    <Compile Include="Message\Auction\BeforeRoundStart.cs" />
+    <Compile Include="Message\Auction\RoundStart.cs" />
+    <Compile Include="Message\Auction\RoundPreview.cs" />
+    <Compile Include="Message\Auction\RoundOnline.cs" />
+    <Compile Include="Message\Auction\BeforeRoundEnd.cs" />
+    <Compile Include="Message\Auction\RoundEnd.cs" />
+    <Compile Include="Message\Basic\LogMsg.cs" />
+    <Compile Include="Message\Message\MessageInnerMsg.cs" />
+    <Compile Include="Message\Message\MessagePushMsg.cs" />
+    <Compile Include="Message\Message\ShortMessageMsg.cs" />
+    <Compile Include="Message\Order\AgentPostingCommissionMsg.cs" />
+    <Compile Include="Message\Order\ArtworkOrderArriveTimeoutMsg.cs" />
+    <Compile Include="Message\Order\ArtworkOrderDeliveryTimeoutMsg.cs" />
+    <Compile Include="Message\Order\AuctionArtworkOrderTimeoutMsg.cs" />
+    <Compile Include="Message\Basic\DailyTasksMsg.cs" />
+    <Compile Include="Message\Order\CancelArtworkOrderMsg.cs" />
+    <Compile Include="Message\Order\ArtworkOrderDeliveredMsg.cs" />
+    <Compile Include="Message\Order\ArtworkOrderPaydMsg.cs" />
+    <Compile Include="Message\Order\ArtworkOrderCompletedMsg.cs" />
+    <Compile Include="Message\Order\ArtworkOrderPayTimeoutMsg.cs" />
+    <Compile Include="Message\Order\CreateArtworkOrderMsg.cs" />
+    <Compile Include="Message\EventType.cs" />
+    <Compile Include="Message\IEventMsg.cs" />
+    <Compile Include="Message\Order\ArtworkOrderSendPayTimeoutEmailToSalesmanMsg.cs" />
+    <Compile Include="Message\Basic\TimedTaskMsg.cs" />
+    <Compile Include="Message\UserRegMsg.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Entitys\OrmLite.Core.ttinclude" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entitys\YW2016\OrmLite.Poco.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>OrmLite.Poco.txt</LastGenOutput>
+    </Content>
+    <Content Include="Entitys\YW2016\OrmLite.Poco.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrmLite.Poco.tt</DependentUpon>
+    </Content>
+    <Content Include="SqlScript\1.0.Sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

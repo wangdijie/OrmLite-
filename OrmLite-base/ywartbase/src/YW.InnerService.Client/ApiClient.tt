@@ -1,0 +1,50 @@
+<#@ include file="ApiClient.Core.ttinclude" #> 
+<#@ assembly name="Newtonsoft.Json.dll" #>
+<#@ import namespace="System.Net" #>
+<#@ output extension=".cs" #>
+<#
+    WebClient client=new WebClient{Encoding = System.Text.Encoding.UTF8}; 
+    string json=client.DownloadString("http://devinnerservice.ywart.com:80/swagger/docs/v1")
+        .Replace("\"$ref\"","\"_ref\"")
+        .Replace("\"enum\"","\"_enum\"")
+        .Replace("\"in\"","\"_in\"") ;
+    SwaggerServerDesc desc = Newtonsoft.Json.JsonConvert.DeserializeObject<SwaggerServerDesc>(json);
+    var apis=desc.paths.SelectMany(m =>
+        m.Value.Select(p => 
+        new {
+            path = m.Key,
+            method = p.Key,
+            api = p.Value,
+            tag = p.Value.tags.Single() }))
+        .GroupBy(m=>m.tag); 
+#>
+
+namespace YW.InnerService.Client
+{
+    using YW.InnerService.Apis;
+
+
+#pragma warning disable CS1591 // 缺少对公共可见类型或成员的 XML 注释 
+    public partial class ApiClient
+    {
+<# 
+    foreach(var tag in apis)
+    {
+#>
+        private <#=tag.Key #>Api _<#=tag.Key #>;
+
+        public <#=tag.Key #>Api <#=tag.Key #> 
+        {
+            get
+            {
+                return _<#=tag.Key #>??(_<#=tag.Key #>=new <#=tag.Key #>Api());
+            }
+        }
+
+<#
+    }
+#>
+
+    }
+#pragma warning restore CS1591 // 缺少对公共可见类型或成员的 XML 注释
+}

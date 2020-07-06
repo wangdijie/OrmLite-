@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YW.Dal</name>
+    </assembly>
+    <members>
+        <member name="T:YW.Dal.Base.CommandBase`1">
+            <summary>
+            命令基类.实现数据库操作
+            </summary>
+            <typeparam name="T">要操作的表实体</typeparam> 
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="db"></param>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Insert(`0)">
+            <summary> 插入一个实体  </summary>
+            <param name="entity">要插入的实体</param>
+            <returns>返回实体插入后的Id</returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Insert(System.Collections.Generic.IEnumerable{`0})">
+            <summary> 插入一个实体数组
+            </summary>
+            <param name="entitys">要插入的实体数组</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Delete(System.Int64)">
+            <summary> 删除一个实体
+            </summary>
+            <param name="id">要删除的实体id</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Delete(System.Collections.Generic.IEnumerable{System.Int64})">
+            <summary> 删除一个实体数组
+            </summary>
+            <param name="ids">要删除的实体id数组</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Delete(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary> 根据条件删除
+            </summary>
+            <param name="predicate">删除的条件表达式</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Update(`0)">
+            <summary>
+            根据id更新一个实体
+            </summary>
+            <param name="entity">要更新的实体.</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Update(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            根据id更新一个实体数组
+            </summary>
+            <param name="entitys">要更新的实体数组.</param>
+            <returns>受影响的行数</returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.Update(System.Object,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            根据条件更新部分字段
+            </summary>
+            <param name="fields"></param>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YW.Dal.Base.CommandBase`1.UpdateAdd(System.Linq.Expressions.Expression{System.Func{`0}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            增量更新方法
+            例子:UpdateAdd(()=>new T{Field=1(或者-1)},m=>条件表示)
+            </summary>
+            <param name="updateFields">要修改的字段和增量值,不修改的字段不赋值</param>
+            <param name="where">条件表达式</param>
+            <returns></returns>
+        </member>
+        <member name="M:YW.Dal.Base.QueryBase`1.SelectAll">
+            <summary>
+            获取所有记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:YW.Dal.Database.DbBase">
+            <summary>
+            数据库基类
+            包含多表查询方法
+            </summary>
+        </member>
+        <member name="T:YW.Dal.Database.DbFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.DB">
+            <summary>
+            数据库上下文
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.ClassInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:YW.Dal.Database.YW2016.StudentInfo">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

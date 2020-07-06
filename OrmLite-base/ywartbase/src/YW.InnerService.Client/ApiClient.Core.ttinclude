@@ -1,0 +1,139 @@
+<#@ template language="C#" hostspecific="True" debug="true"#>
+<#@ assembly name="EnvDTE" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="System.Data" #>
+<#@ assembly name="System.Xml" #>
+<#@ assembly name="System.Configuration" #> 
+<#@ assembly name="Newtonsoft.Json.dll" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Globalization" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Net" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
+<#@ import namespace="System.Configuration" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>
+<#+
+    public class SwaggerServerDesc
+    {
+        public string swagger { get; set; }
+        public SwaggerServerApiInfo info { get; set; }
+        public string host { get; set; }
+        public string[] schemes { get; set; }
+        public Dictionary<string,Dictionary<string,ApiDesc>> paths { get; set; }
+        public Dictionary<string,ModelDesc> definitions { get; set; }
+        
+    }
+    public class ApiDesc
+    {
+        public string[] tags { get; set; }
+        public string summary { get; set; }
+        public string operationId { get; set; }
+        public string[] consumes { get; set; }
+        public string[] produces { get; set; }
+        public ParameterDesc[] parameters { get; set; }
+        public Dictionary<string,ResponseDesc>  responses { get; set; }
+        public bool deprecated { get; set; }
+        public string GetMethodName()
+        {
+            var tag=tags[0];
+            return operationId.Substring(tag.Length+1);
+        }
+        public string GetParamString()
+        {
+
+            return parameters==null?"":string.Join(",",parameters.Select(m=>m.ToParamString()));
+        }              
+
+
+    }
+    
+    public class ParameterDesc:Schema
+    { 
+        public string name { get; set; }
+        public string _in { get; set; }
+        public bool required { get; set; }
+
+        public Schema schema { get; set; }
+        public string ToParamString()
+        {
+            return (_in=="path"?GetTypeName():schema.GetTypeName())+" "+name;
+        }
+    }
+    public class ResponseDesc{
+        public string description { get; set; }
+        public Schema schema { get; set; }
+        
+    }
+    public class Schema
+    {
+        public string type { get; set; }
+        public Schema items { get; set; }  
+        public string _ref { get; set; }
+        public string format { get; set; } 
+        public string description { get; set; }
+        public string[] _enum { get; set; }
+        public string GetTypeName()
+        {
+            switch(type)
+            {
+                case null:
+                    if(_ref==null)return "";
+                    var name=_ref.Substring(14);
+                    if(name.StartsWith("QueryResultModel")){ 
+                        name=  name.Replace("QueryResultModel[", "QueryResultModel<")
+                            .Remove(name.Length-1,1)+">";
+                    }
+					if(name.StartsWith("PagedResultModel")){ 
+                        name=  name.Replace("PagedResultModel[", "PagedResultModel<")
+                            .Remove(name.Length-1,1)+">";
+                    }
+                    return name;
+                case "boolean":
+                    return "bool";
+                case "string":
+                    if(!string.IsNullOrEmpty(format)&&format=="date-time")
+                        return "DateTime";
+                    if(_enum!=null&&!_enum.Any())
+                    {
+                        return "string";
+                    } 
+                    if(format!=null&&format=="byte")
+                    {
+                        return "byte[]";
+                    } 
+                    return "string"; 
+                case "integer":
+                    if(format=="int64")
+                        return "long";
+                    else
+                        return "int";
+                case "number":
+                    return "decimal";
+                case "array":
+                    return items.GetTypeName()+"[]";
+
+            }
+
+            return type;
+        }
+
+    }
+     
+    public class SwaggerServerApiInfo
+    {
+        public string version { get; set; }
+        public string title { get; set; }
+    }
+
+    public class ModelDesc{
+        public string type { get; set; }
+        public string description { get; set; }
+        public Dictionary<string,Schema> properties { get; set; }
+    }
+
+    public enum TypeEnum{ 
+    }
+
+#>

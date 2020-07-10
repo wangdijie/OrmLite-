@@ -14,8 +14,8 @@ namespace YW.Common.Test
         public void SearchTest()
         {
             var sc = new AliCouldSearch(
-                "U5RYb1uoiInSgwey",
-                "rdSpEdWVMtLUgVsv2IAkCAJ56OO2u9",
+                "XXXXXXXXXXX",
+                "jiushitereertre",
                 "http://opensearch-cn-beijing.aliyuncs.com",
                 "ywart_artwork"
                 );
